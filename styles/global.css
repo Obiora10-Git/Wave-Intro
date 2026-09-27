@@ -1,0 +1,64 @@
+/* All universal styles: body, main-content(div) style, header style, footer style,  color, font-weight, font-family, background-color, background-image, logo, nav styles(all) *this includes all the sizes for all here; so don't bother in other style sheets */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Font-weight*/
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+
+    /*Colors*/
+    --black_with_wave_design: #131314;
+    --black: #0A0E1A;
+    --currency_black: #0F1010;
+    --hero_gray: #464545;
+    --lighter_hero_gray: #98ADC1;
+    --gray: #535D6C;
+    --wave_design: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
+    --download_font_color: #ffffff;
+    --blue: #0066FF;
+    --how_it_works_font_color: #121212;
+    --how_it_works_btn: #ffffff;
+    --how_it_works_btn_border_color: #00000030;
+    --icon_outer_fill: #ffffff;
+    --tiny_star_inner_fill: #00D4FF;
+    --blue_paper_plane_inner_fill: #0066FF;
+    --green_drop_icon_inner_fill: #10B981;
+    --light_blue_mail_inner_fill: #20D9FF;
+    --blue_coins_inner_fill: #418DFF;
+    --light_blue_diamond_inner_fill: #20DAFF;
+    --green_mail_inner_fill: #11B981;
+    --tiny_purple_shield_inner_fill: #8F61F6;
+    --blue_icon_box: #EBF3FF;
+    --green_icon_box: #ECFAF5;
+    --light_blue_icon_box: #EBFCFF;
+    --purple_icon_box: #F6F2FE;
+    --light_blue_text_contr: #F2F7FF;
+    --green_text_contr: #ECFAF5;
+    --blue_text_contr: #EBFCFF;
+    --light_blue_text_contr_text: #1E8BFF;
+    --green_text_contr_text: #25BF8C;
+    --blue_text_contr_text: #0668FF;
+    --green_arrow_inner_fill: #37BF8E;
+    --red_arrow_inner_fill: #37BF8E;
+    --green_percentage_contr: #ECFAF5;
+    --red_percentage_contr: #FEF0F0;
+    --blue_graph_stroke: #0D62F3;
+    --blue_graph_shadow: #0D62F3;
+    --green_graph_stroke: #37BF8E;
+    --green_graph_shadow: #37BF8E;
+    --purple_graph_stroke: #7C3AED;
+    --purple_graph_shadow: #8A38F5;
+}
+
+body{
+    font-family: 'Inter';
+}

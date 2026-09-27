@@ -1,0 +1,1 @@
+/* all js for the base page(index) */

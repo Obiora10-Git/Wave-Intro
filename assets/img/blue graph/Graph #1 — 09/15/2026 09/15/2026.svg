@@ -1,0 +1,31 @@
+<svg width="445" height="144" viewBox="0 0 445 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_2020_235)">
+<path d="M17.8528 97.527C33.5642 97.527 33.5642 39.0777 49.2755 39.0777C64.9869 39.0777 64.9869 53.69 80.6983 53.69C96.4097 53.69 96.4097 9.85303 112.121 9.85303C127.832 9.85303 127.832 82.9147 143.544 82.9147C159.255 82.9147 159.255 68.3023 174.967 68.3023C190.678 68.3023 190.678 33.2328 206.389 33.2328C222.101 33.2328 222.101 103.372 237.812 103.372C253.523 103.372 253.523 42.0002 269.235 42.0002C284.946 42.0002 284.946 88.7596 300.658 88.7596C316.369 88.7596 316.369 24.4654 332.08 24.4654C347.792 24.4654 347.792 117.984 363.503 117.984C379.214 117.984 379.214 77.0697 394.926 77.0697C410.637 77.0697 410.637 27.3878 426.349 27.3878" stroke="#0D62F3" stroke-width="2"/>
+<circle cx="17.8528" cy="97.5269" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="49.2754" cy="39.0774" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="80.6985" cy="53.69" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="112.121" cy="9.85283" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="143.544" cy="82.9146" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="174.967" cy="68.3023" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="206.39" cy="33.2327" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="237.813" cy="103.372" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="269.235" cy="42.0003" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="300.658" cy="88.7596" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="332.081" cy="24.4654" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="363.504" cy="117.984" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="394.927" cy="77.0699" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+<circle cx="426.35" cy="27.3877" r="3.25273" fill="#0D62F3" stroke="#1678F8" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_d_2020_235" x="9.72748e-05" y="9.72748e-05" width="444.202" height="143.837" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="6.8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0509804 0 0 0 0 0.384314 0 0 0 0 0.952941 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2020_235"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2020_235" result="shape"/>
+</filter>
+</defs>
+</svg>
