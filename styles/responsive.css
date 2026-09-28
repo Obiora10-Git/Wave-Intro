@@ -1,2 +1,9 @@
 /* Grid, Flex,spacing, media queries styles, javascript  */
 /* desktop, mobile */
+/*1728px*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

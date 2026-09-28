@@ -22,10 +22,14 @@
     --hero_gray: #464545;
     --lighter_hero_gray: #98ADC1;
     --gray: #535D6C;
-    --wave_design: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
+    --wave_design_1: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
+    --wave_design_2: linear-gradient(90deg, #0080FF 74%, #00FFE5 95%);
+    --wave_design_3: linear-gradient(90deg, #0080FF 48%, #00FFE5 63%);
     --download_font_color: #ffffff;
     --blue: #0066FF;
     --how_it_works_font_color: #121212;
+    --ft_logo_black: #141313;
+    --ft_hd_black: #11121B;
     --how_it_works_btn: #ffffff;
     --how_it_works_btn_border_color: #00000030;
     --icon_outer_fill: #ffffff;
@@ -48,7 +52,7 @@
     --green_text_contr_text: #25BF8C;
     --blue_text_contr_text: #0668FF;
     --green_arrow_inner_fill: #37BF8E;
-    --red_arrow_inner_fill: #37BF8E;
+    --red_arrow_inner_fill: #F14644;
     --green_percentage_contr: #ECFAF5;
     --red_percentage_contr: #FEF0F0;
     --blue_graph_stroke: #0D62F3;
@@ -61,4 +65,279 @@
 
 body{
     font-family: 'Inter';
+}
+
+
+
+#section-3{
+    background-color: #F8FAFC;
+}
+
+#section-5{
+    background-color: #F5FAFE;
+}
+
+
+.logo{
+    width: 12.125rem;
+    height: 2.5625rem;
+}
+
+.logo-m{
+    width: 2.8125rem;
+    height: 1.25rem;
+}
+
+.logo-sm{
+    width: 2.3125rem;
+    height: 1.0625rem;
+}
+
+.logo-tiny{
+    width: 1.5rem;
+    height: 0.6875rem;
+}
+
+/*TEXT COLORS*/
+
+/*MAIN COLORS*/
+.white-text{
+    color: var(--download_font_color);
+}
+
+.blue-text{
+    color: var(--blue);
+}
+
+.blue-bg{
+    background-color: var(--blue);
+}
+
+.white-bg{
+    background-color:var(--download_font_color) ;
+}
+
+.black-bg{
+    background-color: var(--black);
+}
+
+/*ICONS*/a
+
+.blue-star-color{
+    fill: var(--tiny_star_inner_fill);
+}
+
+
+.download-btn-arrow-color{
+    stroke: #ffffff;
+}
+
+.paper-plane-color{
+    fill: var(--blue);
+}
+
+.green-drop-color{
+    fill: var(--green_drop_icon_inner_fill);
+}
+
+.light-blue-credit-card-color{
+    fill: var(--light_blue_mail_inner_fill);
+}
+
+.coins-color{
+    fill: var(--blue_coins_inner_fill);
+}
+
+.diamond-color{
+    fill: var(--light_blue_diamond_inner_fill);
+    stroke: var(--light_blue_diamond_inner_fill);
+}
+
+.green-credit-card-color{
+    fill: var(--green_mail_inner_fill);
+}
+
+.shield-color{
+    fill: var(--tiny_purple_shield_inner_fill);
+}
+
+.app-color{
+    fill: #ffffff;
+}
+/*section 2*/
+
+.paper-plane-box-bg{
+    background-color: var(--blue_icon_box);
+}
+
+.green-drop-box-bg{
+    background-color: var(--green_icon_box);
+}
+
+.light-blue-card-box-bg{
+    background-color: var(--light_blue_icon_box);
+}
+
+
+.light-blue-text-contr{
+    background-color: var(--light_blue_text_contr);
+}
+
+.light-green-text-contr{
+    background-color: var(--green_icon_box);
+}
+
+.light-red-text-contr{
+    background-color: var(--red_percentage_contr);
+}
+
+.light-sky-blue-text-contr{
+    background-color: var(--blue_text_contr);
+}
+
+.light-blue-text-contr-text{
+    color: var(--light_blue_text_contr_text);
+}
+
+.light-green-text-contr-text{
+    color: var(--green_text_contr_text)
+}
+
+.light-sky-blue-text-contr-text{
+    color: var(--blue_text_contr_text)
+}
+
+/*section 4*/
+.coins-box-bg{
+    background-color: var(--blue_icon_box);
+}
+
+.diamond-box-bg{
+    background-color: var(--blue_text_contr);
+}
+
+.green-credit-card-box-bg{
+    background-color: var(--green_icon_box);
+}
+
+.shield-box-bg{
+    background-color: var(--purple_icon_box);
+}
+/*arrows color*/
+.green-arrow-color{
+    stroke: var(--green_graph_stroke);
+}
+
+.red-arrow-color{
+    stroke: var(--red_arrow_inner_fill);
+}
+.blue-arrow-color{
+    stroke: var(--light_blue_text_contr_text);
+}
+
+/*percentage colors*/
+.green-text-color{
+    color: var(--green_text_contr_text);
+}
+
+.green-text-percentage-color{
+    color: var(--green_arrow_inner_fill);
+}
+
+.red-text-percentage-color{
+    color: var(--red_arrow_inner_fill);
+}
+
+/*icon sizes*/
+
+.blue-star-box-size{
+    width: clamp(1.05rem, 1.3125rem, 1.216vw);
+    height: clamp(1.05rem, 1.3125rem, 1.216vw);
+}
+
+.download-btn-arrow-box{
+    width: clamp(1.5rem, 1.625rem, 1.6vw);
+    height: clamp(1.5rem, 1.625rem, 1.6vw);
+}
+.paper-plane-box-size{
+    width: clamp(1.5rem, 1.75rem, 1.7vw);
+    height: clamp(1.5rem, 1.75rem, 1.7vw);
+}
+
+.green-drop-size{
+    width: clamp(2rem, 2.25rem, 2.1vw);
+    height: clamp(2rem, 2.25rem, 2.1vw);
+}
+
+.light-blue-mail-size{
+    width: clamp(1.5rem, 1.75rem, 1.7vw);
+    height: clamp(1.5rem, 1.75rem, 1.7vw);
+}
+
+.arrow-size{
+    width: clamp(1.4rem, 1.4375rem, 1.34vw);
+    height: clamp(1.4rem, 1.4375rem, 1.34vw);
+}
+
+.coins-size{
+    width: clamp(1.25rem, 1.5rem, 1.4vw);
+    height: clamp(1.25rem, 1.5rem, 1.4vw);
+}
+
+.diamond-size{
+    width: clamp(0.8rem, 1rem, 0.93vw);
+    height: clamp(0.8rem, 1rem, 0.93vw);
+}
+
+.green-mail-size{
+    width: clamp(1.4rem, 1.4375rem, 1.34vw);
+    height: clamp(1.4rem, 1.4375rem, 1.34vw);
+}
+
+.purple-shield{
+    width: clamp(1rem, 1.1875rem, 1.1vw);
+    height: clamp(1rem, 1.1875rem, 1.1vw);
+}
+
+.apple-size{
+    width: clamp(1.85rem, 2rem, 1.8vw);
+    height: clamp(1.85rem, 2rem, 1.8vw);
+}
+
+.andriod-size{
+    width: clamp(1.85rem, 2rem, 1.8vw);
+    height: clamp(1.85rem, 2rem, 1.8vw);
+}
+/*icon boxes*/
+
+.section-2-iconbox{
+    width: clamp(4rem, 4.0625rem, 3.8vw);
+    height: clamp(4rem, 4.0625rem, 3.8vw);
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4-iconbox{
+    width: clamp(3rem, 3.125rem, 2.9vw);
+    height: clamp(3rem, 3.125rem, 2.9vw);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+
+/*IMAGES*/
+
+.currency-img-size{
+    width: clamp(2.6rem, 2.6875rem, 2.5vw);
+    height: clamp(2.6rem, 2.6875rem, 2.5vw);
+}
+
+.country-transfer{
+    height: 37.0625rem;
 }
