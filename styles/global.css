@@ -151,49 +151,31 @@ body{
     background-color: var(--black);
 }
 
-/*ICONS*/a
+/*ICONS*/
 
-.blue-star-color{
-    fill: var(--tiny_star_inner_fill);
-}
+.blue-star-color {fill: var(--tiny_star_inner_fill);}
 
+.download-btn-arrow-color {stroke: #ffffff;}
 
-.download-btn-arrow-color{
-    stroke: #ffffff;
-}
+.paper-plane-color {fill: var(--blue);}
 
-.paper-plane-color{
-    fill: var(--blue);
-}
+.green-drop-color {fill: var(--green_drop_icon_inner_fill);}
 
-.green-drop-color{
-    fill: var(--green_drop_icon_inner_fill);
-}
+.light-blue-credit-card-color {fill: var(--light_blue_mail_inner_fill);}
 
-.light-blue-credit-card-color{
-    fill: var(--light_blue_mail_inner_fill);
-}
-
-.coins-color{
-    fill: var(--blue_coins_inner_fill);
-}
+.coins-color {stroke: var(--blue_coins_inner_fill);}
 
 .diamond-color{
     fill: var(--light_blue_diamond_inner_fill);
     stroke: var(--light_blue_diamond_inner_fill);
 }
 
-.green-credit-card-color{
-    fill: var(--green_mail_inner_fill);
-}
+.green-credit-card-color {fill: var(--green_mail_inner_fill);}
 
-.shield-color{
-    fill: var(--tiny_purple_shield_inner_fill);
-}
+.shield-color {fill: var(--tiny_purple_shield_inner_fill);}
 
-.app-color{
-    fill: #ffffff;
-}
+.app-color {fill: #ffffff;}
+
 /*section 2*/
 
 .paper-plane-box-bg{
