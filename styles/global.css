@@ -16,6 +16,7 @@
     --extra-bold: 800;
 
     /*Colors*/
+    --nav_gray: #15141496;
     --black_with_wave_design: #131314;
     --black: #0A0E1A;
     --currency_black: #0F1010;
@@ -32,6 +33,7 @@
     --ft_hd_black: #11121B;
     --how_it_works_btn: #ffffff;
     --how_it_works_btn_border_color: #00000030;
+
     --icon_outer_fill: #ffffff;
     --tiny_star_inner_fill: #00D4FF;
     --blue_paper_plane_inner_fill: #0066FF;
@@ -61,6 +63,8 @@
     --green_graph_shadow: #37BF8E;
     --purple_graph_stroke: #7C3AED;
     --purple_graph_shadow: #8A38F5;
+
+    --box-shadow: 0 0 6.4px 1px #00000040;
 }
 
 body{
@@ -78,24 +82,76 @@ body{
 }
 
 
+.invert{
+    transform: rotateY('180');
+}
+
+/*Active buttons and Containers*/
+
+/*Links*/
+
+.a-text{
+    color: var(--nav_gray);
+}
+
+
+/*Logo*/
+
 .logo{
     width: 12.125rem;
     height: 2.5625rem;
+    background-image: url("/assets/img/z_copy_2_1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo-m{
     width: 2.8125rem;
     height: 1.25rem;
+    background-image: url("/assets/img/z_copy_2_1_smaller.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo-sm{
     width: 2.3125rem;
     height: 1.0625rem;
+    background-image: url("/assets/img/z_copy_2_1_smaller.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo-tiny{
     width: 1.5rem;
     height: 0.6875rem;
+    background-image: url("/assets/img/z_copy_2_1_smaller.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bitcoin{
+    background-image: url("/assets/img/Bitcoin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dollar{
+    background-image: url("/assets/img/USD-NGN.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.euro{
+    background-image: url("/assets/img/EUR-NGN.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;     
 }
 
 .wave-animation{
@@ -130,7 +186,6 @@ body{
 }
 /*TEXT COLORS*/
 
-/*MAIN COLORS*/
 .white-text{
     color: var(--download_font_color);
 }
@@ -138,6 +193,48 @@ body{
 .blue-text{
     color: var(--blue);
 }
+
+.black-with-wave{
+    color: var(--black_with_wave_design);
+}
+
+.black-text{
+    color: var(--black);
+}
+
+.currency-text{
+    color: var(--currency_black);
+}
+
+.hero-gray-text{
+    color: var(--hero_gray);
+}
+
+.lighter-hero-gray-text{
+    color: var(--lighter_hero_gray);
+}
+
+.gray{
+    color: var(--gray);
+}
+
+.download-btn-text{
+    color: var(--download_font_color)
+}
+
+.how_it_works_font_color{
+    color: var(--how_it_works_font_color);
+}
+
+.ft_logo_black{
+    color: var(--ft_logo_black);
+}
+
+.ft_hd_black{
+    color: var(--ft_hd_black);
+}
+
+/*MAIN COLORS*/
 
 .blue-bg{
     background-color: var(--blue);
@@ -149,6 +246,38 @@ body{
 
 .black-bg{
     background-color: var(--black);
+}
+
+.how_it_works_btn_border_color{
+    border-color: var(--how_it_works_btn_border_color);
+}
+
+.wave_design_1{
+    background-image: var(--wave_design_1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent
+
+}
+
+.wave_design_2{
+    background-image: var(--wave_design_2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent
+}
+
+.wave_design_3{
+    background-image: var(--wave_design_3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent
 }
 
 /*ICONS*/
@@ -175,6 +304,32 @@ body{
 .shield-color {fill: var(--tiny_purple_shield_inner_fill);}
 
 .app-color {fill: #ffffff;}
+
+.blue-graph-main{
+    fill: var(--blue_graph_stroke);
+    stroke: #1678F8;
+}
+.blue-graph-stroke{
+   stroke: var(--blue_graph_stroke); 
+}
+
+.green-graph-main{
+    fill: var(--green_graph_stroke);
+    stroke: var(--green_graph_stroke);
+}
+
+.green-graph-stroke{
+    stroke: var(--green_graph_stroke);   
+}
+
+.purple-graph-main{
+    fill: var(--purple_graph_stroke);
+    stroke: #F4F4F4;
+}
+
+.purple-graph-stroke{
+    stroke: var(--purple_graph_stroke);
+}
 
 /*section 2*/
 
@@ -281,7 +436,7 @@ body{
     height: clamp(2rem, 2.25rem, 2.1vw);
 }
 
-.light-blue-mail-size{
+.light-blue-credit-card-size{
     width: clamp(1.5rem, 1.75rem, 1.7vw);
     height: clamp(1.5rem, 1.75rem, 1.7vw);
 }
@@ -301,7 +456,7 @@ body{
     height: clamp(0.8rem, 1rem, 0.93vw);
 }
 
-.green-mail-size{
+.green-credit-card-size{
     width: clamp(1.4rem, 1.4375rem, 1.34vw);
     height: clamp(1.4rem, 1.4375rem, 1.34vw);
 }
@@ -319,6 +474,21 @@ body{
 .andriod-size{
     width: clamp(1.85rem, 2rem, 1.8vw);
     height: clamp(1.85rem, 2rem, 1.8vw);
+}
+
+.blue-graph-size{
+    width: 27.8125rem;
+    height: 9rem;
+}
+
+.green-graph-size{
+    width: 27.9375rem;
+    height: 9.1875rem;
+}
+
+.purple-graph-size{
+    width: 27.625rem;
+    height: 8.75rem;
 }
 /*icon boxes*/
 
@@ -352,4 +522,13 @@ body{
 
 .country-transfer{
     height: 37.0625rem;
+    background-image: url("/assets/img/Across_Africa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phone-illustrated{
+    width: 43.9375rem;
+    height: 62.125rem;
 }

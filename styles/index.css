@@ -10,6 +10,17 @@
     padding: 1.5rem;
 }
 
+/*Box & Button Sizes*/
+
+/*Box-shadow setings*/
+.box-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+/*Border settings*/
+
+
+
 /*Heading FONT*/
 
 .heading-1{
