@@ -249,7 +249,7 @@ footer{
 }
 
 #sm-circle{
-    width: 15rem;
+    width: 15rem; /*use vw*/
     height: 15rem;
     border-radius: 50%;
 }

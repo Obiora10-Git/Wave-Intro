@@ -7,15 +7,19 @@
 }
 
 .main-pd{
-    padding: 1.5rem;
+    padding: 5.875rem;
+}
+
+.sec-5-up-down-pd{
+    padding: 11.5rem 0;
 }
 
 .box-pd{
-    padding: 0.75rem;
+    padding: 2rem;
 }
 
 .footer-sm-box{
-    padding: 0.5rem;
+    padding: 1.75rem;
 }
 
 /*Box & Button Sizes*/

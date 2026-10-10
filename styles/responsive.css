@@ -10,9 +10,160 @@
 
 /*Page arrangement*/
 
+#section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+#section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#section-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+#section-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#section-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;  
+    text-align: center;
+}
 /*DIV style classes*/
 
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: 50%;
+    height: auto;
+    gap: 2.15rem;
+}
+
+.hero-application-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 5rem;
+}
+
+.hero-btn-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 47.5%;
+}
+
+.hero-bottom-text{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-2-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 2.15rem;
+    text-align: center;
+}
+
+.section-2-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-2-content-box-type-1{
+    width: 65%;
+}
+
+.section-2-content-box-type-2{
+    width: 30%;
+}
+
+.section-3-title-box{
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 2rem;
+    /*add vertical align class*/
+}
+
+.section-3-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4-content{
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 2rem; 
+    flex-wrap: nowrap;
+    width: 50%;
+    height: auto;
+      /*add vertical align class*/
+}
+
+.section-4-content-box{
+    gap: 1.95rem;
+    /*add vertical align class*/
+}
+
+.section-5-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 2.15rem;
+    text-align: center;
+}
+
+.section-5-download-link-btn-contr{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 /*Box Arrangement*/
@@ -42,6 +193,6 @@
 .vertical-alignment{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
