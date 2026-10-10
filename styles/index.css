@@ -6,11 +6,50 @@
     box-sizing: border-box;
 }
 
-.pd{
+.main-pd{
     padding: 1.5rem;
 }
 
 /*Box & Button Sizes*/
+
+.get-the-app-btn-pd{
+    padding: 11px 25px;
+    text-align: center;
+}
+
+.hero-btn-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 68px;
+}
+
+.section-2-main-content-box-size{
+    height: 378px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.section-2-text-contr-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+}
+
+.section-3-percentage-contr-size{
+    width: 96px;
+    height: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /*Box-shadow setings*/
 .box-shadow{
@@ -19,7 +58,25 @@
 
 /*Border settings*/
 
+.get-the-app-btn-bdr-r{
+    border-radius: 42px;
+}
 
+.hero-btn-bdr-r{
+    border-radius: 32px;
+}
+
+.section-2-main-content-box-bdr-r{
+    border-radius: 40px;
+}
+
+.section-2-text-contr-bdr-r{
+    border-radius: 23px;
+}
+
+.section-3-percentage-contr-bdr-r{
+    border-radius: 8px;
+}
 
 /*Heading FONT*/
 
