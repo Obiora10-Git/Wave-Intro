@@ -4,88 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/layout.css">
     <title>Wave</title>
 </head>
 <body>
-    <div class="wave-animation">
+    <div class="wave-animation" style="display: none;">
         
         <div id="sm-circle" class="circle-bg"></div>
         <div id="mid-circle" class="circle-bg"></div>
         <div id="big-circle" class="circle-bg"></div>
     </div>
     <div class="body_content">
-        <header style="display: none;">
+        <header class="main-pd-all">
             <nav>
                 <div class="logo_box">
                     <div class="logo"></div>
                 </div>
                 <div class="nav">
                     <ul>
-                        <li><a class="a-text" href="">Features</a></li>
-                        <li><a class="a-text" href="">Live Waves</a></li>
-                        <li><a class="a-text" href="">Why WAVE</a></li>
-                        <li><a class="a-text" href="">Get Started</a></li>
+                        <li class="nav-content"><a class="a-text semi-bold" href="#section-2">Features</a></li>
+                        <li class="nav-content"><a class="a-text semi-bold" href="#section-3">Live Waves</a></li>
+                        <li class="nav-content"><a class="a-text semi-bold" href="#section-4">Why WAVE</a></li>
+                        <li class="nav-content"><a class="a-text semi-bold" href="#section-5">Get Started</a></li>
                     </ul>
                 </div>
                 <div class="nav_download_btn_box">
-                    <a class="blue-bg white-text">Get the App</a>
+                    <a class="get-the-app single-item-centering-text-alignment blue-bg white-text get-the-app-btn-pd get-the-app-btn-bdr-r semi-bold">Get the App</a>
                 </div>
-                <div class="hamburger hb-active">
+                <!--<div class="hamburger hb-active">
                     <a href="#">
                         <span class="line black-text"></span>
                         <span class="line black-text"></span>
                         <span class="line black-text"></span>
                     </a>
-                </div>
+                </div>-->
             </nav>
         </header>
         <main>
-            <section id="section-1" style="display: none;">
+            <section id="section-1" class="main-pd">
                 <div class="hero">
-                    <h1 class="heading-1">Let your money <br><span><div>flow</div></span></h1>
-                    <p class="hero-gray-text">Send money, save in Bitcoin, and spend globally - all in<br> three taps. Built for Africa, designed for everyone </p>
+                    <h1 class="heading-1 black-with-wave extra-bold">Let your money <br><span><div class="wave_design_1">flow</div></span></h1>
+                    <p class="hero-gray-text hero-pg-1 medium">Send money, save in Bitcoin, and spend globally - all in three taps. Built for Africa, designed for everyone </p>
                     <div class="hero-application-info">
                         <div class="hero-btn-box">
-                        <a class="blue-bg" href="#">
-                            <span>
+                        <a class=" hero-download-btn blue-bg hero-btn-size hero-btn-bdr-r double-item-centering box-pd-side" href="#">
+                            <span class="vertical-alignment">
                                 <svg class="download-btn-arrow-box" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="download-btn-arrow-color" d="M6.5 22.75H19.5M13 3.25V18.4167M7.58333 13L13 18.4167L18.4167 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>  
                             </span>
-                            <p class="white-text">Download WAVE</p>
+                            <p class="hero-download-btn-font white-text semi-bold">Download WAVE</p>
                         </a>
-                        <a class="white-bg" href="#">
-                            <p class="black-text">See how it works</p>
+                        <a class="hero-working-btn white-bg hero-btn-size hero-btn-bdr-r single-item-centering-text-alignment box-pd-side how_it_works_btn_outline" href="#">
+                            <p class="hero-working-btn-font black-text semi-bold">See how it works</p>
                         </a>
                         </div>
                         <div class="hero-bottom-text">
-                            <span>
+                            <span class="vertical-alignment">
                                 <svg class="blue-star-box-size" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="blue-star-color" d="M18.6232 7.24133L13.4163 6.48459L11.0886 1.76574C11.025 1.63654 10.9205 1.53195 10.7913 1.46838C10.4672 1.30842 10.0735 1.44172 9.91147 1.76574L7.58383 6.48459L2.3769 7.24133C2.23335 7.26184 2.1021 7.32951 2.00161 7.43205C1.88012 7.55692 1.81318 7.7249 1.81549 7.8991C1.81779 8.0733 1.88916 8.23945 2.01391 8.36106L5.7812 12.034L4.89116 17.2204C4.87029 17.3411 4.88364 17.4652 4.9297 17.5786C4.97576 17.6921 5.05268 17.7903 5.15175 17.8623C5.25082 17.9342 5.36806 17.977 5.49019 17.9857C5.61232 17.9944 5.73445 17.9687 5.84272 17.9115L10.5 15.4629L15.1574 17.9115C15.2845 17.9792 15.4322 18.0018 15.5737 17.9772C15.9305 17.9156 16.1705 17.5773 16.1089 17.2204L15.2189 12.034L18.9862 8.36106C19.0887 8.26057 19.1564 8.12932 19.1769 7.98576C19.2323 7.62688 18.9821 7.29465 18.6232 7.24133Z"/>
                                 </svg>
                             </span>
-                            <p class="lighter-hero-gray-text">4.9 on App Store · 120K+ users trust WAVE</p>
+                            <p class=" hero-pg-2 lighter-hero-gray-text semi-bold">4.9 on App Store · 120K+ users trust WAVE</p>
                         </div>
                     </div>
                 </div>
                 <div class="phone-illustration">
-                    <span>
+                    <span class="vertical-alignment">
                         <div id="imported-phone-illustration"></div>
                     </span>
                 </div>
             </section>
-            <section id="section-2" style="display: none;">
-                <div class="section_2">
+            <section id="section-2" class="main-pd">
                     <div class="section-2-title">
-                        <h2 class="heading-3">Everything you need,<br> nothing you don't</h2>
-                        <p class="gray">Three products, one flow. No jargon, no confusion - just tap,<br> confirm, done.</p>
+                        <h2 class="heading-3 bold">Everything you need,<br> nothing you don't</h2>
+                        <p class="section-2-intro-pg gray medium">Three products, one flow. No jargon, no confusion - just tap,<br> confirm, done.</p>
                     </div>
-                    <div class="section-2-content">
-                        <div class="section-2-content-box-type-1">
-                            <div class="paper-plane-box-bg section-2-iconbox">
-                                <span>
+                    <div class="section-2-content ">
+                        <div class=" section-2-box-contr section-2-content-box-type-1 section-2-main-content-box-size section-2-main-content-box-bdr-r box-pd vertical-alignment section-2-gap box-shadow">
+                            <div class="paper-plane-box-bg section-2-iconbox single-item-centering">
+                                <span class="vertical-alignment">
                                     <svg class="paper-plane-box-size" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2177_845)">
                                     <path class="paper-plane-color" d="M24.0626 0.355458L1.31256 13.475C-0.568686 14.5633 -0.388217 17.3469 1.62428 18.1726L7.87506 20.7594V25.375C7.87506 27.9125 11.1126 28.957 12.611 26.9391L15.0063 23.707L21.1258 26.2336C21.4485 26.3648 21.7876 26.4305 22.1266 26.4305C22.5751 26.4305 23.018 26.3156 23.4173 26.0914C24.1173 25.6976 24.5985 24.9976 24.7243 24.2047L27.9727 3.02968C28.3063 0.836708 25.9548 -0.732823 24.0626 0.355458ZM10.5001 25.375V21.8422L12.5016 22.668L10.5001 25.375ZM22.1266 23.8055L13.7157 20.3328L21.3829 9.26952C21.968 8.42186 20.8633 7.43749 20.0868 8.11015L8.52038 18.1891L2.62506 15.75L25.3751 2.62499L22.1266 23.8055Z"/>
@@ -98,92 +96,91 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div>
-                                <p class="black-text">Flow Pay</p>
-                                <p class="gray">Send money to anyone by phone number or @username. Three taps: tap, confirm, done. No account numbers, no sort codes, no stress.</p>
-                                <div>
-                                    <span>
+                            <div class="vertical-alignment section-2-sub-gap">
+                                <p class="products-headings black-text semi-bold">Flow Pay</p>
+                                <p class="products-pg gray medium">Send money to anyone by phone number or @username. Three taps: tap, confirm, done. No account numbers, no sort codes, no stress.</p>
+                                <div class="section-2-text-contr-size section-2-text-contr-bdr-r light-blue-text-contr sm-text-contr double-item-centering">
+                                    <span class="vertical-alignment">
                                         <svg class="arrow-size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="green-arrow-color" d="M11.2169 18.0057L11.2105 4.58905M16.0045 9.37842L11.2105 4.58905L6.42113 9.38302" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
-                                    <p class="light-blue-text-contr-text">3 taps to send</p>
+                                    <p class="products-icon-font light-blue-text-contr-text medium">3 taps to send</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="section-2-content-box-type-2">
-                            <div class="green-drop-box-bg section-2-iconbox">
-                                <span>
+                        <div class=" section-2-box-contr section-2-content-box-type-2 section-2-main-content-box-size section-2-main-content-box-bdr-r box-pd vertical-alignment section-2-gap box-shadow">
+                            <div class="green-drop-box-bg section-2-iconbox single-item-centering">
+                                <span class="vertical-alignment">
                                     <svg class="green-drop-size" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="green-drop-color" fill-rule="evenodd" clip-rule="evenodd" d="M19.5301 4.35001L27.2026 15.2925L27.1876 15.285C28.5227 17.1734 29.2382 19.4299 29.2351 21.7425C29.2351 27.945 24.1876 32.9925 17.9851 32.9925C11.7826 32.9925 6.73511 27.945 6.73511 21.7425C6.73511 19.425 7.44761 17.19 8.78261 15.285L16.4551 4.34251C16.6285 4.09538 16.859 3.89377 17.127 3.75482C17.3951 3.61588 17.6927 3.5437 17.9946 3.54444C18.2965 3.54518 18.5937 3.6188 18.8611 3.75905C19.1284 3.8993 19.3579 4.10203 19.5301 4.35001ZM11.2501 21.75H13.5001C13.5001 24.2325 15.5176 26.25 18.0001 26.25V28.5C14.2801 28.5 11.2501 25.47 11.2501 21.75Z" />
                                     </svg>
                                 </span>
                             </div>
-                            <div>
-                                <p class="black-text">Auto-Save</p>
-                                <p class="gray">Round up every payment and save the change in Bitcoin. Watch your savings grow without thinking about it.</p>
-                                <div>
-                                    <span><!--padlock--></span>
-                                    <p class="light-green-text-contr-text">Round-up savings</p>
+                            <div class="vertical-alignment section-2-sub-gap">
+                                <p class="products-headings black-text semi-bold">Auto-Save</p>
+                                <p class="products-pg gray medium">Round up every payment and save the change in Bitcoin. Watch your savings grow without thinking about it.</p>
+                                <div class="section-2-text-contr-size section-2-text-contr-bdr-r light-green-text-contr sm-text-contr single-item-centering-text-alignment-sec-2">
+                                    <span class="vertical-alignment"><!--padlock--></span>
+                                    <p class="products-icon-font light-green-text-contr-text medium">Round-up savings</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="section-2-content-box-type-2">
-                            <div class="light-blue-card-box-bg section-2-iconbox">
-                                <span>
+                        <div class=" section-2-box-contr section-2-content-box-type-2 section-2-main-content-box-size section-2-main-content-box-bdr-r box-pd vertical-alignment section-2-gap box-shadow">
+                            <div class="light-blue-card-box-bg section-2-iconbox single-item-centering">
+                                <span class="vertical-alignment">
                                     <svg class="light-blue-credit-card-size" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="light-blue-credit-card-color" d="M20.8438 3.59375H2.15625C1.75869 3.59375 1.4375 3.91494 1.4375 4.3125V7.90625H21.5625V4.3125C21.5625 3.91494 21.2413 3.59375 20.8438 3.59375ZM1.4375 18.6875C1.4375 19.0851 1.75869 19.4062 2.15625 19.4062H20.8438C21.2413 19.4062 21.5625 19.0851 21.5625 18.6875V9.88281H1.4375V18.6875ZM14.4424 14.5547C14.4424 14.4559 14.5232 14.375 14.6221 14.375H18.3281C18.427 14.375 18.5078 14.4559 18.5078 14.5547V16.1719C18.5078 16.2707 18.427 16.3516 18.3281 16.3516H14.6221C14.5232 16.3516 14.4424 16.2707 14.4424 16.1719V14.5547Z"/>
                                     </svg>
                                 </span>
                             </div>
-                            <div>
-                                <p class="black-text">Wave Card</p>
-                                <p class="gray">A debit card that works in Naira and Dollars. Pay online, in-store, or withdraw at any ATM - no hidden fees.</p>
-                                <div>
-                                    <span>
+                            <div class="vertical-alignment section-2-sub-gap">
+                                <p class=" products-headings black-text semi-bold">Wave Card</p>
+                                <p class="products-pg gray medium">A debit card that works in Naira and Dollars. Pay online, in-store, or withdraw at any ATM - no hidden fees.</p>
+                                <div class="section-2-text-contr-size section-2-text-contr-bdr-r light-sky-blue-text-contr sm-text-contr double-item-centering">
+                                    <span class="vertical-alignment">
                                         <div class="logo-tiny"></div>
                                     </span>
-                                    <p class="light-sky-blue-text-contr-text">Naira & USD</p>
+                                    <p class="products-icon-font light-sky-blue-text-contr-text medium">Naira & USD</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
-            <section id="section-3" style="display: none;">
-                    <div class="section-3-title-box">
-                        <div>
-                            <span>
+            <section id="section-3" >
+                    <div class="section-3-title-box vertical-alignment ">
+                        <div class="double-item-centering">
+                            <span class="vertical-alignment">
                                 <div class="logo-sm"></div>
                             </span>
-                            <p class="blue-text">LIVE WAVES</p>
+                            <p class="section-3-logo-text blue-text semi-bold">LIVE WAVES</p>
                         </div>
-                        <h2 class="heading-3">The market, simplified</h2>
-                        <p>No candlesticks, no jargon. Clean waves show you the trend at a <br>glance.</p>
+                        <h2 class="heading-3 black-text bold">The market, simplified</h2>
+                        <p class="section-3-intro-pg gray medium">No candlesticks, no jargon. Clean waves show you the trend at a <br>glance.</p>
                     </div>
-                    <div class="section-3-content">
-                        <div>
-                            <div>
-                                <div>
-                                    <span>
+                    <div class="section-3-content ">
+                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                            <div class="vertical-alignment section-3-box-gap">
+                                <div class="double-item-centering">
+                                    <span class="vertical-alignment">
                                         <div class="currency-img-size bitcoin"></div>
                                     </span>
-                                    <p>Bitcoin</p>
+                                    <p class="section-3-box-heading currency-text semi-bold">Bitcoin</p>
                                 </div>
                                 <div>
-                                    <p>$67,420</p>
+                                    <p class="section-3-box-values black-text bold">$67,420</p>
                                 </div>
-                                <div>
-                                    <span>
+                                <div class="section-3-percentage-contr-size section-3-percentage-contr-bdr-r light-green-text-contr double-item-centering-sm-gap">
+                                    <span class="vertical-alignment">
                                         <svg class="arrow-size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="green-arrow-color" d="M11.2169 18.0057L11.2105 4.58905M16.0045 9.37842L11.2105 4.58905L6.42113 9.38302" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
-                                    <p>+3.2%</p>
+                                    <p class="section-3-box-arrow-icon-font green-text-percentage-color semi-bold">+3.2%</p>
                                 </div>
                             </div>
-                            <div>
-                                <span>
+                            <div class="single-item-centering">
+                                <span class="vertical-alignment">
                                     <!--svg-->
                                     <!--focus on size-->
                                     <svg class="blue-graph-size" viewBox="0 0 445 144" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,28 +217,28 @@
                                 </span>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <span>
+                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                            <div class="vertical-alignment section-3-box-gap">
+                                <div class="double-item-centering">
+                                    <span class="vertical-alignment">
                                         <div class="currency-img-size dollar"></div>
                                     </span>
-                                    <p>USD /NGN</p>
+                                    <p class="section-3-box-heading currency-text semi-bold">USD /NGN</p>
                                 </div>
                                 <div>
-                                    <p>₦1,580</p>
+                                    <p class="section-3-box-values black-text bold">₦1,580</p>
                                 </div>
-                                <div>
-                                    <span>
+                                <div class="section-3-percentage-contr-size section-3-percentage-contr-bdr-r light-green-text-contr double-item-centering-sm-gap">
+                                    <span class="vertical-alignment">
                                         <svg class="arrow-size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="green-arrow-color" d="M11.2169 18.0057L11.2105 4.58905M16.0045 9.37842L11.2105 4.58905L6.42113 9.38302" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
-                                    <p>+0.4%</p>
+                                    <p class="section-3-box-arrow-icon-font green-text-percentage-color semi-bold">+0.4%</p>
                                 </div>
                             </div>
-                            <div>
-                                <span>
+                            <div class="single-item-centering">
+                                <span class="vertical-alignment">
                                     <!--svg-->
                                     <!--focus on size-->
                                     <svg class="green-graph-size" viewBox="0 0 447 147" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,28 +275,30 @@
                                 </span>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <span>
+                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                            <div class="vertical-alignment section-3-box-gap">
+                                <div class="double-item-centering">
+                                    <span class="vertical-alignment">
                                         <div class="currency-img-size euro"></div>
                                     </span>
-                                    <p>EUR/NGN</p>
+                                    <p class="section-3-box-heading currency-text semi-bold">EUR/NGN</p>
                                 </div>
                                 <div>
-                                    <p>₦1,720</p>
+                                    <p class="section-3-box-values black-text bold">₦1,720</p>
                                 </div>
-                                <div>
-                                    <span class="invert"><!--svg do it the other way around-->
+                                <div class="section-3-percentage-contr-size section-3-percentage-contr-bdr-r light-red-text-contr double-item-centering-sm-gap">
+                                    <div class="invert">
+                                    <span class="vertical-alignment"><!--svg do it the other way around-->
                                         <svg class="arrow-size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="green-arrow-color" d="M11.2169 18.0057L11.2105 4.58905M16.0045 9.37842L11.2105 4.58905L6.42113 9.38302" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="red-arrow-color" d="M11.2169 18.0057L11.2105 4.58905M16.0045 9.37842L11.2105 4.58905L6.42113 9.38302" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
-                                    <p>-0.2%</p>
+                                    </div>
+                                    <p class="section-3-box-arrow-icon-font red-text-percentage-color semi-bold">-0.2%</p>
                                 </div>
                             </div>
-                            <div>
-                                <span>
+                            <div class="single-item-centering">
+                                <span class="vertical-alignment">
                                     <!--svg-->
                                     <!--focus on size-->
                                     <svg class="purple-graph-size" viewBox="0 0 442 140" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -338,125 +337,131 @@
                         </div>
                     </div>
             </section>
-            <section id="section-4" style="display: none;">
-                <div class="country-transfer"><!--absolute img--></div>
-                <div class="section-4-content">
-                    <p>BUILT FOR AFRICA</p>
-                    <h2 class="heading-3">Why<span><div>WAVE</div></span></h2>
-                    <div class="section-4-content-box">
-                        <div>
-                            <span>
+            <section id="section-4">
+                <div class="country-transfer"></div>
+                <div class="section-4-content ">
+                    <p class="section-4-sm-heading blue-text semi-bold" >BUILT FOR AFRICA</p>
+                    <div class="section-4-heading-with-wave"><h2 class="heading-3 black-with-wave double-item-centering bold"><div>Why</div><span><div class="wave_design_2" >WAVE</div></span></h2></div>
+                    <div class="section-4-content-box vertical-alignment">
+                        <div class=" section-4-box-contr section-4-box-contr-size section-4-box-contr-bdr-r double-item-centering-sec-4 section-4-box-outline box-pd-sm">
+                            <div class="section-4-iconbox single-item-centering coins-box-bg">
+                            <span class="vertical-alignment">
                                 <svg class="coins-size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="coins-color" d="M12 9C16.4183 9 20 7.65685 20 6C20 4.34315 16.4183 3 12 3C7.58172 3 4 4.34315 4 6C4 7.65685 7.58172 9 12 9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path class="coins-color" d="M6.037 12C4.77 12.53 4 13.232 4 14C4 15.657 7.582 17 12 17C16.418 17 20 15.657 20 14C20 13.232 19.23 12.53 17.963 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path class="coins-color" d="M4 6V10C4 11.657 7.582 13 12 13C16.418 13 20 11.657 20 10V6M4 14V18C4 19.657 7.582 21 12 21C16.418 21 20 19.657 20 18V14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <div>
-                                <p>No hidden fees, ever</p>
-                                <p>What you see is what you pay. No markup on exchange rates, no surprise charges.</p>
+                            </div>
+                            <div class="vertical-alignment">
+                                <p class="section-4-box-bold-font black-text semi-bold">No hidden fees, ever</p>
+                                <p class="section-4-box-font gray medium">What you see is what you pay. No markup on exchange rates, no surprise charges.</p>
                             </div>
                         </div>
-                        <div>
-                            <span>
-                                <svg class="diamond-size" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="diamond-color" d="M8.5957 15.2693C8.54177 15.3179 8.48259 15.3609 8.41797 15.3953C8.28937 15.4636 8.14563 15.4988 8 15.4988C7.85438 15.4988 7.71062 15.4636 7.58203 15.3953C7.5172 15.3608 7.45739 15.3182 7.40332 15.2693C7.44874 15.3053 7.49633 15.3385 7.54785 15.366C7.6871 15.4401 7.84227 15.4792 8 15.4792C8.15774 15.4792 8.31289 15.4401 8.45215 15.366C8.50344 15.3387 8.55045 15.3051 8.5957 15.2693ZM8 0.500732C8.14563 0.500732 8.28937 0.536883 8.41797 0.605225C8.48386 0.640283 8.54486 0.683237 8.59961 0.733154C8.58403 0.720724 8.56908 0.7075 8.55273 0.696045L8.45215 0.634521L8.34473 0.585693C8.23499 0.543615 8.1182 0.52124 8 0.52124C7.88179 0.521247 7.76502 0.543598 7.65527 0.585693L7.54785 0.634521C7.49511 0.662586 7.44576 0.696112 7.39941 0.733154C7.45429 0.683029 7.51593 0.640401 7.58203 0.605225C7.71062 0.536892 7.85438 0.500741 8 0.500732Z" />
-                                </svg>
+                        <div class=" section-4-box-contr section-4-box-contr-size section-4-box-contr-bdr-r double-item-centering-sec-4 section-4-box-outline box-pd-sm">
+                            <div class="section-4-iconbox single-item-centering diamond-box-bg">
+                            <span class="vertical-alignment">
+                            <svg class="diamond-size" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" fill="none"><use xlink:href="#a" class="diamond-color"/><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path class="diamond-color-stroke" stroke-width="2" d="M8.38405 1.22592a.4629.4629 0 0 0-.16651-.15007.46306.46306 0 0 0-.21749-.05426.46306.46306 0 0 0-.21748.05426.4629.4629 0 0 0-.16651.15007l-4.56001 6.468a.54006.54006 0 0 0-.09506.306c0 .10927.03315.21597.09506.306l4.56001 6.46898c.04237.0629.09955.1145.16651.1501.06695.0356.14164.0542.21748.0542.07585 0 .15054-.0186.21749-.0542.06696-.0356.12414-.0872.16651-.1501l4.56005-6.46898c.0619-.09003.095-.19673.095-.306s-.0331-.21597-.095-.306zm-1.536-.613003a1.39 1.39 0 0 1 .49973-.449634 1.38996 1.38996 0 0 1 .65227-.16255c.22746 0 .45143.055815.65228.16255a1.39 1.39 0 0 1 .49973.449634L13.7121 7.08092c.1875.26976.288.59045.288.919s-.1005.64923-.288.919L9.15206 15.3869c-.12728.1885-.29887.3429-.49973.4497a1.39034 1.39034 0 0 1-.65228.1625c-.22745 0-.45142-.0558-.65227-.1625-.20086-.1068-.37245-.2612-.49973-.4497l-4.56-6.46698A1.61006 1.61006 0 0 1 2 8.00092c0-.32855.10052-.64924.28805-.919z" mask="url(#b)"/><defs><path id="a" d="M8.38405 1.22592a.4629.4629 0 0 0-.16651-.15007.46306.46306 0 0 0-.21749-.05426.46306.46306 0 0 0-.21748.05426.4629.4629 0 0 0-.16651.15007l-4.56001 6.468a.54006.54006 0 0 0-.09506.306c0 .10927.03315.21597.09506.306l4.56001 6.46898c.04237.0629.09955.1145.16651.1501.06695.0356.14164.0542.21748.0542.07585 0 .15054-.0186.21749-.0542.06696-.0356.12414-.0872.16651-.1501l4.56005-6.46898c.0619-.09003.095-.19673.095-.306s-.0331-.21597-.095-.306zm-1.536-.613003a1.39 1.39 0 0 1 .49973-.449634 1.38996 1.38996 0 0 1 .65227-.16255c.22746 0 .45143.055815.65228.16255a1.39 1.39 0 0 1 .49973.449634L13.7121 7.08092c.1875.26976.288.59045.288.919s-.1005.64923-.288.919L9.15206 15.3869c-.12728.1885-.29887.3429-.49973.4497a1.39034 1.39034 0 0 1-.65228.1625c-.22745 0-.45142-.0558-.65227-.1625-.20086-.1068-.37245-.2612-.49973-.4497l-4.56-6.46698A1.61006 1.61006 0 0 1 2 8.00092c0-.32855.10052-.64924.28805-.919z"/></defs></svg>
                             </span>
-                            <div>
-                                <p>Works on any phone</p>
-                                <p>Low data, slow network? WAVE loads in under 2 seconds on 2G. Seriously</p>
+                            </div>
+                            <div class="vertical-alignment">
+                                <p class="section-4-box-bold-font black-text semi-bold">Works on any phone</p>
+                                <p class="section-4-box-font gray medium">Low data, slow network? WAVE loads in under 2 seconds on 2G. Seriously</p>
                             </div>
                         </div>
-                        <div>
-                            <span>
+                        <div class=" section-4-box-contr section-4-box-contr-size section-4-box-contr-bdr-r double-item-centering-sec-4 section-4-box-outline box-pd-sm">
+                            <div class="section-4-iconbox single-item-centering green-credit-card-box-bg">
+                            <span class="vertical-alignment">
                                 <svg class="green-credit-card-size" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="green-credit-card-color" d="M20.8438 3.59375H2.15625C1.75869 3.59375 1.4375 3.91494 1.4375 4.3125V7.90625H21.5625V4.3125C21.5625 3.91494 21.2413 3.59375 20.8438 3.59375ZM1.4375 18.6875C1.4375 19.0851 1.75869 19.4062 2.15625 19.4062H20.8438C21.2413 19.4062 21.5625 19.0851 21.5625 18.6875V9.88281H1.4375V18.6875ZM14.4424 14.5547C14.4424 14.4559 14.5232 14.375 14.6221 14.375H18.3281C18.427 14.375 18.5078 14.4559 18.5078 14.5547V16.1719C18.5078 16.2707 18.427 16.3516 18.3281 16.3516H14.6221C14.5232 16.3516 14.4424 16.2707 14.4424 16.1719V14.5547Z"/>
                                 </svg>
                             </span>
-                            <div>
-                                <p>Naira and Dollar friendly</p>
-                                <p>Hold, send, and spend in both Naira and USD. Your money, your currency.</p>
+                            </div>
+                            <div class="vertical-alignment">
+                                <p class="section-4-box-bold-font black-text semi-bold">Naira and Dollar friendly</p>
+                                <p class="section-4-box-font gray medium">Hold, send, and spend in both Naira and USD. Your money, your currency.</p>
                             </div>
                         </div>
-                        <div>
-                            <span>
+                        <div class=" section-4-box-contr section-4-box-contr-size section-4-box-contr-bdr-r double-item-centering-sec-4 section-4-box-outline box-pd-sm">
+                            <div class="section-4-iconbox single-item-centering shield-box-bg">
+                            <span class="vertical-alignment">
                                 <svg class="purple-shield" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="shield-color" d="M8.3125 9.85031L6.77469 8.3125L5.9375 9.14969L8.3125 11.5247L13.0625 6.77469L12.2253 5.9375L8.3125 9.85031Z"/>
                                 <path class="shield-color" d="M9.5 17.8125L5.833 15.8573C4.78752 15.3012 3.91324 14.4709 3.30401 13.4555C2.69478 12.4401 2.37362 11.2779 2.375 10.0938V2.375C2.375 2.06006 2.50012 1.75801 2.72282 1.53531C2.94551 1.31261 3.24756 1.1875 3.5625 1.1875H15.4375C15.7524 1.1875 16.0545 1.31261 16.2772 1.53531C16.4999 1.75801 16.625 2.06006 16.625 2.375V10.0938C16.6264 11.2779 16.3052 12.4401 15.696 13.4555C15.0868 14.4709 14.2125 15.3012 13.167 15.8573L9.5 17.8125ZM3.5625 2.375V10.0938C3.56184 11.0626 3.82487 12.0133 4.32338 12.844C4.8219 13.6747 5.5371 14.3541 6.39232 14.8093L9.5 16.4665L12.6077 14.8099C13.463 14.3547 14.1783 13.6752 14.6768 12.8444C15.1753 12.0135 15.4383 11.0627 15.4375 10.0938V2.375H3.5625Z"/>
                                 </svg>
 
                             </span>
-                            <div>
-                                <p>Bank-grade security</p>
-                                <p>256-bit encryption, biometric login, and cold storage for your Bitcoin. Your funds are safe.</p>
+                            </div>
+                            <div class="vertical-alignment">
+                                <p class="section-4-box-bold-font black-text semi-bold">Bank-grade security</p>
+                                <p class="section-4-box-font gray medium">256-bit encryption, biometric login, and cold storage for your Bitcoin. <br>Your funds are safe.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="section-5" style="display: none;">
+            <section id="section-5" class="main-pd">
                 <div class="section-5-title">
-                    <h2 class="heading-2">Ready to let your money <br><span><div>flow</div></span>?</h2>
-                    <p>Join 120,000+ people across Nigeria and Benin who send, save, and spend with <br>WAVE every day.</p>
+                    <h2 class="heading-2 black-with-wave vertical-alignment-center extra-bold">Ready to let your money <span class="double-item-centering-sm-gap"><div class="wave_design_3">flow</div><div>?</div></span></h2>
+                    <p class="section-5-pg gray medium">Join 120,000+ people across Nigeria and Benin who send, save, and spend with <br>WAVE every day.</p>
                 </div>
-                <div class="section-5-download-link-btn-contr">
-                    <a class="blue-bg" href="">
-                        <span>
+                <div class="section-5-download-link-btn-contr double-item-centering">
+                    <a class=" apple blue-bg section-5-download-btn section-5-download-btn-apple-pd section-5-download-btn-bdr-r double-item-center-centering-sm-gap" href="">
+                        <span class="vertical-alignment">
                             <svg class="apple-size" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="app-color" d="M22.6264 16.2175C22.6143 14.1528 23.5497 12.5968 25.4388 11.4494C24.3822 9.93574 22.7838 9.10322 20.6768 8.94277C18.6817 8.78535 16.499 10.1053 15.6998 10.1053C14.8552 10.1053 12.9237 8.99727 11.404 8.99727C8.26768 9.0457 4.93457 11.4979 4.93457 16.4869C4.93457 17.9612 5.204 19.484 5.74287 21.0521C6.46338 23.1168 9.06084 28.1755 11.7703 28.0937C13.1871 28.0604 14.1892 27.0887 16.0328 27.0887C17.822 27.0887 18.7483 28.0937 20.3286 28.0937C23.0623 28.0544 25.4115 23.4559 26.0957 21.3852C22.4296 19.6565 22.6264 16.3234 22.6264 16.2175ZM19.4446 6.98408C20.9795 5.16162 20.8402 3.50264 20.7948 2.90625C19.4386 2.98496 17.8704 3.82959 16.9773 4.86797C15.9935 5.98203 15.4152 7.35947 15.5394 8.9125C17.0046 9.02451 18.3427 8.2707 19.4446 6.98408Z"/>
                             </svg>
                         </span>
-                        <p>Download for lOS</p>
+                        <p class="section-5-btn-font download-btn-text medium">Download for lOS</p>
                     </a>
-                    <a class="black-bg" href="">
-                        <span>
+                    <a class=" andriod black-bg section-5-download-btn section-5-download-btn-android-pd section-5-download-btn-bdr-r double-item-center-centering-sm-gap" href="">
+                        <span class="vertical-alignment">
                             <svg class="andriod-size" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="app-color" d="M8.44067 23.1779C8.44067 23.9092 9.03755 24.506 9.77192 24.506H11.2938V28.2685C11.2938 29.2217 12.0594 29.9998 13 29.9998C13.9438 29.9998 14.7063 29.2248 14.7063 28.2685V24.5029H17.3625V28.2654C17.3625 29.2185 18.1282 29.9967 19.0688 29.9967C20.0125 29.9967 20.775 29.2217 20.775 28.2654V24.5029H22.2969C23.0313 24.5029 23.6282 23.906 23.6282 23.1748V10.8248H8.44067V23.1779ZM19.6 4.42478L21.0032 2.39353C21.0844 2.27478 21.0657 2.11541 20.9563 2.03728C20.8469 1.96228 20.6907 1.99978 20.6094 2.11853L19.1532 4.23103C18.1938 3.85291 17.125 3.64353 16.0032 3.64353C14.8813 3.64353 13.8125 3.85291 12.8532 4.23103L11.3969 2.12166C11.3157 2.00291 11.1594 1.96228 11.05 2.04041C10.9407 2.11541 10.9219 2.27166 11.0032 2.39666L12.4063 4.42791C10.175 5.46541 8.61255 7.43103 8.41255 9.72791H23.6C23.3938 7.42791 21.8282 5.46228 19.6 4.42478ZM12.7969 7.62791C12.6307 7.62791 12.4681 7.5786 12.3299 7.48624C12.1917 7.39387 12.0839 7.26258 12.0203 7.10897C11.9567 6.95537 11.94 6.78635 11.9725 6.62328C12.0049 6.46022 12.0849 6.31043 12.2025 6.19287C12.3201 6.07531 12.4699 5.99524 12.6329 5.96281C12.796 5.93037 12.965 5.94702 13.1186 6.01064C13.2722 6.07427 13.4035 6.18201 13.4959 6.32025C13.5882 6.45849 13.6375 6.62102 13.6375 6.78728C13.637 7.01005 13.5482 7.22353 13.3907 7.38105C13.2332 7.53858 13.0197 7.62733 12.7969 7.62791ZM19.3094 7.62791C19.1432 7.62791 18.9806 7.5786 18.8424 7.48624C18.7042 7.39387 18.5964 7.26258 18.5328 7.10897C18.4692 6.95537 18.4525 6.78635 18.485 6.62328C18.5174 6.46022 18.5974 6.31043 18.715 6.19287C18.8326 6.07531 18.9824 5.99524 19.1454 5.96281C19.3085 5.93037 19.4775 5.94702 19.6311 6.01064C19.7847 6.07427 19.916 6.18201 20.0084 6.32025C20.1007 6.45849 20.15 6.62102 20.15 6.78728C20.1495 7.01005 20.0607 7.22353 19.9032 7.38105C19.7457 7.53858 19.5322 7.62733 19.3094 7.62791ZM26.2907 10.7748C25.3469 10.7748 24.5844 11.5498 24.5844 12.506V19.2685C24.5844 20.2217 25.35 20.9998 26.2907 20.9998C27.2344 20.9998 27.9969 20.2248 27.9969 19.2685V12.5029C28 11.5467 27.2375 10.7748 26.2907 10.7748ZM5.70942 10.7748C4.76567 10.7748 4.00317 11.5498 4.00317 12.506V19.2685C4.00317 20.2217 4.7688 20.9998 5.70942 20.9998C6.65317 20.9998 7.41567 20.2248 7.41567 19.2685V12.5029C7.41567 11.5467 6.65005 10.7748 5.70942 10.7748Z"/>
                             </svg>
                         </span>
-                        <p>Download for Android</p>
+                        <p class="section-5-btn-font download-btn-text medium">Download for Android</p>
                     </a>
                 </div>
             </section>
         </main>
-        <footer style="display: none;">
-            <div>
-                <div>
-                    <span>
+        <footer class="main-pd-all">
+            <div class="vertical-alignment-with-gap">
+                <div class="double-item-centering">
+                    <span class="vertical-alignment">
                         <div class="logo-m"></div>
                     </span>
-                    <p>WAVE</p>
+                    <p class="footer-sm-heading ft_logo_black semi-bold">WAVE</p>
                 </div>
                 <div>
-                    <p>Let your money flow. WAVE is the simplest way to send, save, and spend across Africa.</p>
+                    <p class="footer-font gray medium">Let your money flow. WAVE is the simplest way to send, save, and spend across Africa.</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>PRODUCT</p>
+            <div class="footer-content">
+                <div class="vertical-alignment-with-gap">
+                    <p class="footer-font ft_hd_black semi-bold">PRODUCT</p>
                     <ul>
-                        <li>Flow Pay</li>
-                        <li>Auto-Save</li>
-                        <li>Wave Card</li>
-                        <li>Security</li>
+                        <li class="footer-font gray medium">Flow Pay</li>
+                        <li class="footer-font gray medium">Auto-Save</li>
+                        <li class="footer-font gray medium">Wave Card</li>
+                        <li class="footer-font gray medium">Security</li>
                     </ul>
                 </div>
-                <div>
-                    <p>COMPANY</p>
+                <div class="vertical-alignment-with-gap">
+                    <p class="footer-font ft_hd_black semi-bold">COMPANY</p>
                     <ul>
-                        <li>About</li>
-                        <li>Career</li>
-                        <li>Blog</li>
-                        <li>Press</li>
+                        <li class="footer-font gray medium">About</li>
+                        <li class="footer-font gray medium">Career</li>
+                        <li class="footer-font gray medium">Blog</li>
+                        <li class="footer-font gray medium">Press</li>
                     </ul>
                 </div>
-                <div>
-                    <p>LEGAL</p>
+                <div class="vertical-alignment-with-gap">
+                    <p class="footer-font ft_hd_black semi-bold">LEGAL</p>
                     <ul>
-                        <li>Privacy</li>
-                        <li>Terms</li>
-                        <li>License</li>
+                        <li class="footer-font gray medium">Privacy</li>
+                        <li class="footer-font gray medium">Terms</li>
+                        <li class="footer-font gray medium">License</li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,12 @@
-/* all js for the base page(index) */
-fetch('phone_illustration.txt')
-    .then(res => res.text())
-    .then(htmlContent => {
-    // Changing this to innerHTML turns the raw text into real, styleable HTML elements
-     document.getElementById('imported-phone-illustration').innerHTML = htmlContent;
-     });
+fetch('./assets/phone_illustration.txt')
+  .then(res => {
+    if (!res.ok) throw new Error(`HTTP ${res.status}: File not found`);
+    return res.text();
+  })
+  .then(htmlContent => {
+    document.getElementById('imported-phone-illustration').innerHTML = htmlContent;
+  })
+  .catch(err => console.error("Error loading illustration:", err));
+
+
+  
