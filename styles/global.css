@@ -1263,14 +1263,23 @@ width: 1.331018519vw;
 
 }
 
+.hero-download-btn:visited{
+    background-color: var(--blue);
+    box-shadow: none;
+}
 
 
-.hero-download-btn:hover, .hero-download-btn:active, .hero-download-btn:visited {
+.hero-download-btn:hover, .hero-download-btn:active {
     background-color: var(--blue_active);
     box-shadow: var(--box-shadow-active);
 }
 
-.hero-working-btn:hover, .hero-working-btn:active, .hero-working-btn:visited{
+ .hero-working-btn:visited{
+    color: var(--how_it_works_font_color);
+    outline: var(--outline);
+ }
+
+.hero-working-btn:hover, .hero-working-btn:active{
     color: var(--blue);
     outline: var(--outline-active);
 }
@@ -1287,12 +1296,22 @@ width: 1.331018519vw;
     box-shadow: var(--box-shadow-active);
 }
 
-.apple:hover, .apple:active, .apple:visited{
+.apple:visited{
+    background-color: var(--blue);
+    box-shadow: none;    
+}
+
+.apple:hover, .apple:active {
     background-color: var(--apple-btn-active);
     box-shadow: var(--box-shadow-active);   
 }
 
-.andriod:hover, .andriod:active, .andriod:visited{
+.andriod:visited{
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.andriod:hover, .andriod:active{
     background-color: var(--black);
     box-shadow: var(--box-shadow-active);   
 }
