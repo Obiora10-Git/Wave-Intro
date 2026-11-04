@@ -13,13 +13,6 @@
 }
 
 
-
-html{
-    scroll-behavior: smooth;
-}
-
-
-
 :root{
 
 /*Font-weight*/
@@ -165,33 +158,66 @@ html{
 }
 
 
+html {
+    scroll-padding-top: clamp(3.5rem, 5vw, 5rem);
+    scroll-behavior: smooth;
+    height: fit-content;
+}
 
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    cursor:context-menu;  
+}
 
- font-family: 'Inter';
+img, video, canvas {
+    max-width: 100%;
+}
 
- width: 100%;
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.75rem, 6vw,8rem);
+    min-height: clamp(3rem, 2.9vw, 3.125rem);
+}
 
- display: grid;
+.hamburger-contr{
+    display: none;
+}
 
- grid-template-columns: 1fr;
+.nav ul {
+    flex-wrap: nowrap;
+    gap: clamp(0.35rem, 1.95vw, 3rem);
+    white-space: normal;
+}
 
- justify-content: center;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: clamp(1rem, 15vw, 15rem);
+    
+}
 
- align-content: center;
- 
- cursor:context-menu;
-
+footer button{
+    background-color: transparent;
+    border: none;
 }
 
 
 
+
 .body_content{
-
- width: 100%;
-
- height: auto;
-
+    flex: 1;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -201,9 +227,10 @@ header{
  width: 100%;
  position: fixed;
  top: 0;
+ left: 0;
  background-color: var(--bg_white);
  border-bottom: 1px solid #3333330a;
- margin-top: 0.1px;
+ z-index: 200;
 
 }
 
@@ -230,6 +257,11 @@ section{
 }
 
 
+.n-100{
+    width: 100%;
+    height: 100%;
+}
+
 .medium{
     font-weight: var(--medium);
 }
@@ -248,7 +280,6 @@ section{
 
 
 
-
 .invert{
 
  transform: rotateX(180deg);
@@ -258,7 +289,6 @@ section{
 
 
 /*Active buttons and Containers*/
-
 
 
 /*Links*/
@@ -272,6 +302,7 @@ a{
  color: var(--nav_gray);
 
  text-decoration: none;
+ white-space: nowrap;
 
 }
 
@@ -309,10 +340,6 @@ color: var(--blue);
 
 
 
-
-
-
-
 /*List*/
 
 
@@ -344,36 +371,13 @@ white-space: nowrap;
 /*Nav*/
 
 
-
-nav{
-
- display: grid;
-
- grid-template-columns: repeat(3, 1fr);
-
- justify-content: space-between;
-
- align-items: center;
-
- width: 100%;
-
- height: auto;
-
- gap: clamp(100px, 18vw, 400px)
-
-
-
-}
-
-
-
 .nav_download_btn_box{
 
  display: flex;
 
  flex-direction: row;
 
- justify-content: flex-end;
+ justify-content: center;
 
  align-items: center;
 
@@ -382,22 +386,14 @@ nav{
 }
 
 
-
-/*Footer*/
-
-
-
-
-
-
-/*Make the footer collpse in mobile by usign drop down for each content*/
-
-
-
-
-
 /*Logo*/
 
+.logo_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .logo{
@@ -416,13 +412,24 @@ nav{
 
 }
 
+.logo-m-major{
+width: clamp(2rem, 5vw, 5rem);
+ height: clamp(1.5rem, 3vw, 4rem);
 
+ background-image: url("/assets/img/z_copy_2_1_smaller.png");
+
+ background-position: center;
+
+ background-size: contain;
+
+ background-repeat: no-repeat;  
+}
 
 .logo-m{
 
- width: 2.604166667vw;
+ width: clamp(2rem, 2.604166667vw, 5rem);
 
- height: 1.157407407vw;
+ height: clamp(1rem, 1.157407407vw, 3rem);
 
  background-image: url("/assets/img/z_copy_2_1_smaller.png");
 
@@ -438,9 +445,9 @@ nav{
 
 .logo-sm{
 
- width: 2.141203704vw;
+ width: clamp(1.75rem, 2.141203704vw, 4rem);
 
- height: 0.9837962963vw;
+ height: clamp(0.75rem, 0.9837962963vw, 1.75rem);
 
  background-image: url("/assets/img/z_copy_2_1_smaller.png");
 
@@ -456,9 +463,9 @@ nav{
 
 .logo-tiny{
 
- width: 1.388888889vw;
+ width: clamp(1rem, 1.388888889vw, 3.5rem);
 
- height: 0.6365740741vw;
+ height: clamp(0.5rem, 0.6365740741vw, 2rem);
 
  background-image: url("/assets/img/z_copy_2_1_smaller.png");
 
@@ -470,6 +477,17 @@ nav{
 
 }
 
+.logo-btn{
+    background-color: transparent;
+    border: solid #333;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .bitcoin{
@@ -1056,9 +1074,9 @@ stroke: var(--blue_graph_stroke);
 
 .blue-star-box-size{
 
- width: 1.215277778vw;
+ width: clamp(1rem, 1.215277778vw, 3rem) ;
 
- height: 1.215277778vw;
+ height:clamp(1rem, 1.215277778vw, 3rem);
 
 }
 
@@ -1066,17 +1084,17 @@ stroke: var(--blue_graph_stroke);
 
 .download-btn-arrow-box{
 
- width: 1.50462963vw;
+ width: clamp(1rem, 1.50462963vw, 4rem) ;
 
- height: 1.50462963vw;
+ height:clamp(1rem, 1.50462963vw, 4rem);
 
 }
 
 .paper-plane-box-size{
 
- width: 1.62037037vw;
+ width: clamp(1rem, 1.62037037vw, 4rem);
 
- height: 1.62037037vw;
+ height: clamp(1rem, 1.62037037vw, 4rem);
 
 }
 
@@ -1084,9 +1102,9 @@ stroke: var(--blue_graph_stroke);
 
 .green-drop-size{
 
- width: 2.083333333vw;
+ width: clamp(1.5rem, 2.083333333vw, 4rem);
 
- height: 2.083333333vw;
+ height: clamp(1.5rem, 2.083333333vw, 4rem);
 
 }
 
@@ -1094,9 +1112,9 @@ stroke: var(--blue_graph_stroke);
 
 .light-blue-credit-card-size{
 
- width: 1.62037037vw;
+ width: clamp(1rem, 1.62037037vw, 4rem);
 
- height: 1.62037037vw;
+ height: clamp(1rem, 1.62037037vw, 4rem);
 
 }
 
@@ -1154,9 +1172,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .apple-size{
 
- width: 1.851851851852vw;
+ width: clamp(1rem, 1.851851851852vw, 3rem);
 
- height: 1.851851851852vw;
+ height: clamp(1rem, 1.851851851852vw, 3rem);
 
 }
 
@@ -1164,9 +1182,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .andriod-size{
 
- width: 1.851851851852vw;
+ width: clamp(1rem, 1.851851851852vw, 3rem);
 
- height: 1.851851851852vw;
+ height: clamp(1rem, 1.851851851852vw, 3rem);
 
 }
 
@@ -1174,9 +1192,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .blue-graph-size{
 
- width: 25.75231481vw;
+ width: 100%;
 
- height: 8.333333333vw;
+ height: clamp(6rem, 100%, 10rem);
 
 }
 
@@ -1184,9 +1202,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .green-graph-size{
 
- width: 25.86805556vw;
+ width: 100%;
 
- height: 8.506944444vw;
+ height: clamp(5.95rem, 100%, 9.5rem);
 
 }
 
@@ -1194,9 +1212,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .purple-graph-size{
 
- width: 25.5787037vw;
+ width: 100%;
 
- height: 8.101851852vw;
+ height: clamp(6rem, 100%, 9.5rem);
 
 }
 
@@ -1206,9 +1224,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .section-2-iconbox{
 
- min-width: 3.761574074vw;
+ min-width: clamp(2.5rem, 3.761574074vw, 5rem);
 
- min-height: 3.761574074vw;
+ min-height: clamp(2.5rem, 3.761574074vw, 5rem);
 
  border-radius: 1.041666667vw;
 
@@ -1218,9 +1236,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .section-4-iconbox{
 
- min-width: 2.893518519vw;
+ min-width: clamp(1.95rem, 2.893518519vw, 3.5rem);
 
- min-height: 2.893518519vw;
+ min-height: clamp(1.95rem, 2.893518519vw, 3.5rem);
 
  border-radius: 0.9259259259vw;
 
@@ -1236,9 +1254,9 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .currency-img-size{
 
- width: 2.488425926vw;
+ width: clamp(1.5rem, 2.488425926vw, 5rem);
 
- height: 2.488425926vw;
+ height: clamp(1.5rem, 2.488425926vw, 5rem);
 
 }
 
@@ -1264,10 +1282,14 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
 .phone-illustrated{
 
- width: 40.68287037vw;
+ width: clamp(15rem, 40.68287037vw, 50rem) ;
 
- height: 57.52314815vw;
+ height: clamp(30rem, 57.52314815vw, 60rem);
 
+}
+
+.hero-download-btn, .hero-working-btn{
+    white-space: nowrap;
 }
 
 .hero-download-btn:visited{
@@ -1323,48 +1345,4 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
     box-shadow: var(--box-shadow-active);   
 }
 
-html {
-    scroll-padding-top: clamp(3.5rem, 5vw, 5rem);
-
-    
-}
-
-body {
-    min-width: 0;
-    max-width: 100vw;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-img, video, canvas {
-    max-width: 100%;
-}
-
-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: clamp(0.75rem, 2.5vw, 2.5rem);
-    min-height: clamp(3rem, 2.9vw, 3.125rem);
-}
-
-.nav ul {
-    flex-wrap: nowrap;
-    gap: clamp(0.75rem, 2.6vw, 3.4rem);
-    white-space: normal;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: clamp(1rem, 15vw, 15rem);
-    
-}
 

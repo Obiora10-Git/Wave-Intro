@@ -1,172 +1,280 @@
-/* All universal styles: body, main-content(div) style, header style, footer style,  color, font-weight, font-family, background-color, background-image, logo, nav styles(all) *this includes all the sizes for all here; so don't bother in other style sheets */
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 
 *{
-
     margin: 0;
-
     padding: 0;
-
-    box-sizing: border-box;
-
+    box-sizing: border-box; 
 }
 
 
 
 html{
-
     scroll-behavior: smooth;
-
 }
 
 
 
 :root{
 
-    /*Font-weight*/
+/*Font-weight*/
 
-    --medium: 500;
+--medium: 500;
 
-    --semi-bold: 600;
+ --semi-bold: 600;
 
-    --bold: 700;
+ --bold: 700;
 
-    --extra-bold: 800;
+ --extra-bold: 800;
 
 
 
-    /*Colors*/
+ /*Colors*/
 
-    --bg_white: #ffffff;
+ --bg_white: #ffffff;
 
-    --bg_white01: #F8FAFC;
+ --bg_white01: #F8FAFC;
 
-    --bg_white02: #F5FAFE;
+ --bg_white02: #F5FAFE;
 
 
 
-    --nav_gray: #15141496;
+ --nav_gray: #15141496;
 
-    --black_with_wave_design: #131314;
+ --black_with_wave_design: #131314;
 
-    --black: #0A0E1A;
+ --black: #0A0E1A;
 
-    --currency_black: #0F1010;
+ --currency_black: #0F1010;
 
-    --hero_gray: #464545;
+ --hero_gray: #464545;
 
-    --lighter_hero_gray: #98ADC1;
+ --lighter_hero_gray: #98ADC1;
 
-    --gray: #535D6C;
+ --gray: #535D6C;
 
-    --wave_design_1: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
+ --wave_design_1: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
 
-    --wave_design_2: linear-gradient(90deg, #0080FF 30%, #00FFE5 65%);
+ --wave_design_2: linear-gradient(90deg, #0080FF 30%, #00FFE5 65%);
 
-    --wave_design_3: linear-gradient(90deg, #0080FF 48%, #00FFE5 63%);
+ --wave_design_3: linear-gradient(90deg, #0080FF 48%, #00FFE5 63%);
 
-    --download_font_color: #ffffff;
+ --download_font_color: #ffffff;
 
-    --blue: #0066FF;
+ --blue: #0066FF;
 
-    --how_it_works_font_color: #121212;
+ --how_it_works_font_color: #121212;
 
-    --ft_logo_black: #141313;
+ --ft_logo_black: #141313;
 
-    --ft_hd_black: #11121B;
+ --ft_hd_black: #11121B;
 
-    --how_it_works_btn: #ffffff;
+ --how_it_works_btn: #ffffff;
 
-    --how_it_works_btn_border_color: #00000030;
+ --how_it_works_btn_border_color: #00000030;
 
 
 
-    --icon_outer_fill: #ffffff;
+ --icon_outer_fill: #ffffff;
 
-    --tiny_star_inner_fill: #00D4FF;
+ --tiny_star_inner_fill: #00D4FF;
 
-    --blue_paper_plane_inner_fill: #0066FF;
+ --blue_paper_plane_inner_fill: #0066FF;
 
-    --green_drop_icon_inner_fill: #10B981;
+ --green_drop_icon_inner_fill: #10B981;
 
-    --light_blue_mail_inner_fill: #20D9FF;
+ --light_blue_mail_inner_fill: #20D9FF;
 
-    --blue_coins_inner_fill: #418DFF;
+ --blue_coins_inner_fill: #418DFF;
 
-    --light_blue_diamond_inner_fill: #20DAFF;
+ --light_blue_diamond_inner_fill: #20DAFF;
 
-    --green_mail_inner_fill: #11B981;
+ --green_mail_inner_fill: #11B981;
 
-    --tiny_purple_shield_inner_fill: #8F61F6;
+ --tiny_purple_shield_inner_fill: #8F61F6;
 
-    --blue_icon_box: #EBF3FF;
+ --blue_icon_box: #EBF3FF;
 
-    --green_icon_box: #ECFAF5;
+ --green_icon_box: #ECFAF5;
 
-    --light_blue_icon_box: #EBFCFF;
+ --light_blue_icon_box: #EBFCFF;
 
-    --purple_icon_box: #F6F2FE;
+ --purple_icon_box: #F6F2FE;
 
-    --light_blue_text_contr: #F2F7FF;
+ --light_blue_text_contr: #F2F7FF;
 
-    --green_text_contr: #ECFAF5;
+ --green_text_contr: #ECFAF5;
 
-    --blue_text_contr: #EBFCFF;
+ --blue_text_contr: #EBFCFF;
 
-    --light_blue_text_contr_text: #1E8BFF;
+ --light_blue_text_contr_text: #1E8BFF;
 
-    --green_text_contr_text: #25BF8C;
+ --green_text_contr_text: #25BF8C;
 
-    --blue_text_contr_text: #0668FF;
+ --blue_text_contr_text: #0668FF;
 
-    --green_arrow_inner_fill: #37BF8E;
+ --green_arrow_inner_fill: #37BF8E;
 
-    --red_arrow_inner_fill: #F14644;
+ --red_arrow_inner_fill: #F14644;
 
-    --green_percentage_contr: #ECFAF5;
+ --green_percentage_contr: #ECFAF5;
 
-    --red_percentage_contr: #FEF0F0;
+ --red_percentage_contr: #FEF0F0;
 
-    --blue_graph_stroke: #0D62F3;
+ --blue_graph_stroke: #0D62F3;
 
-    --blue_graph_shadow: #0D62F3;
+ --blue_graph_shadow: #0D62F3;
 
-    --green_graph_stroke: #37BF8E;
+ --green_graph_stroke: #37BF8E;
 
-    --green_graph_shadow: #37BF8E;
+ --green_graph_shadow: #37BF8E;
 
-    --purple_graph_stroke: #7C3AED;
+ --purple_graph_stroke: #7C3AED;
 
-    --purple_graph_shadow: #8A38F5;
+ --purple_graph_shadow: #8A38F5;
 
 
 
-    --box-shadow: 0 0 6.4px 1px #00000040;
+ --box-shadow: 0 0 6.4px 1px #00000040;
 
-    --outline-sm: 1px solid #00000030;
+ --outline-sm: 1px solid #00000030;
 
-    --outline: 1px solid #00000040;
+ --outline: 1px solid #00000040;
 
-    --inside-outline: -2px;
+ --inside-outline: -2px;
 
 
 
-    --blue_active: #0B52BE;
+ --blue_active: #0B52BE;
 
-    --apple-btn-active: #0655CC;
+ --apple-btn-active: #0655CC;
 
-    --how_it_works_font_color-active: #0066FF;
+ --how_it_works_font_color-active: #0066FF;
 
-    --outline-active: 2px solid #0066FF;
+ --outline-active: 2px solid #0066FF;
 
-    --box-shadow-active: 0 8px 30px 0 #0066f64a;
+ --box-shadow-active: 0 8px 30px 0 #0066f64a;
 
-    --major_shadow-active: inset 0 -9px 4px 0 #0066FF, 0 8px 30px 0 #0066f64a;
+ --major_shadow-active: inset 0 -9px 4px 0 #0066FF, 0 8px 30px 0 #0066f64a;
+
+}
+
+
+/*Logo*/
+
+
+
+.logo{
+
+ width: clamp(140px, 11.22685185vw, 400px);
+
+ height: clamp(25px, 2.372685185vw, 50px);
+
+ background-image: url("/assets/img/z_copy_2_1.png");
+
+ background-position: center;
+
+ background-size: contain;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.logo-m{
+
+ width: 2.604166667vw;
+
+ height: 1.157407407vw;
+
+ background-image: url("/assets/img/z_copy_2_1_smaller.png");
+
+ background-position: center;
+
+ background-size: contain;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.logo-sm{
+
+ width: 2.141203704vw;
+
+ height: 0.9837962963vw;
+
+ background-image: url("/assets/img/z_copy_2_1_smaller.png");
+
+ background-position: center;
+
+ background-size: contain;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.logo-tiny{
+
+ width: 1.388888889vw;
+
+ height: 0.6365740741vw;
+
+ background-image: url("/assets/img/z_copy_2_1_smaller.png");
+
+ background-position: center;
+
+ background-size: contain;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.bitcoin{
+
+ background-image: url("/assets/img/Bitcoin.png");
+
+ background-position: center;
+
+ background-size: cover;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.dollar{
+
+ background-image: url("/assets/img/USD-NGN.png");
+
+ background-position: center;
+
+ background-size: cover;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+.euro{
+
+ background-image: url("/assets/img/EUR-NGN.png");
+
+ background-position: center;
+
+ background-size: cover;
+
+ background-repeat: no-repeat;
 
 }
 
@@ -174,35 +282,62 @@ html{
 
 body{
 
-    font-family: 'Inter';
+ font-family: 'Inter';
 
-    width: 100%;
+ width: 100%;
 
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    justify-content: center;
-
-    align-content: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ cursor:context-menu;
 
 }
 
 
-
-.body_content{
-
-    width: 100%;
-
-    height: auto;
-
+img, video, canvas {
+    max-width: 100%;
 }
-
-
 
 header{
-
     width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg_white);
+    border-bottom: 1px solid #3333330a;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.75rem, 6vw, 8rem);
+    min-height: clamp(3rem, 2.9vw, 3.125rem);
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: clamp(0.35rem, 1.95vw, 3rem);
+    white-space: normal;
+    list-style: none;
+}
+
+
+.nav_download_btn_box{
+
+ display: flex;
+
+ flex-direction: row;
+
+ justify-content: flex-end;
+
+ align-items: center;
+
+ white-space: nowrap;
 
 }
 
@@ -210,13 +345,13 @@ header{
 
 section{
 
-    width: 100%;
+ width: 100%;
 
 }
 
 #section-3{
 
-    background-color: #F8FAFC;
+ background-color: #F8FAFC;
 
 }
 
@@ -224,17 +359,33 @@ section{
 
 #section-5{
 
-    background-color: #F5FAFE;
+ background-color: #F5FAFE;
 
 }
 
+
+.medium{
+    font-weight: var(--medium);
+}
+
+.semi-bold{
+    font-weight: var(--semi-bold);
+}
+
+.bold{
+    font-weight: var(--bold);
+}
+
+.extra-bold{
+    font-weight: var(--extra-bold);
+}
 
 
 
 
 .invert{
 
-    transform: rotateX(180deg);
+ transform: rotateX(180deg);
 
 }
 
@@ -245,14 +396,17 @@ section{
 
 
 /*Links*/
-
+a{
+    text-decoration: none;
+}
 
 
 .a-text{
 
-    color: var(--nav_gray);
+ color: var(--nav_gray);
 
-    text-decoration: none;
+ text-decoration: none;
+ white-space: nowrap;
 
 }
 
@@ -260,11 +414,11 @@ section{
 
 .a-text:visited{
 
-    color: var(--nav_gray);
+ color: var(--nav_gray);
 
-    text-decoration: underline;
+ text-decoration: underline;
 
-    opacity: 90%;
+ opacity: 90%;
 
 }
 
@@ -272,9 +426,9 @@ section{
 
 .a-text:hover, .a-text:focus{
 
-   color: var(--blue);
+color: var(--blue);
 
-    text-decoration: underline;
+ text-decoration: underline;
 
 }
 
@@ -282,268 +436,12 @@ section{
 
 .a-text:active{
 
-    color: var(--blue);
+ color: var(--blue);
 
-    text-decoration: underline;
-
-}
-
-
-
-
-
-
-
-/*List*/
-
-
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: clamp(0.75rem, 2.6vw, 3.4rem);
-    justify-content: center;
-    align-items: center;
-    white-space: normal;
-}
-
-
-
-
-
-
-
-/*Nav*/
-
-
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    min-height: clamp(3rem, 2.9vw, 3.125rem);
-    gap: clamp(0.75rem, 2.5vw, 2.5rem);
-}
-
-
-
-.nav_download_btn_box{
-
-    display: flex;
-
-    flex-direction: row;
-
-    justify-content: flex-end;
-
-    align-items: center;
-
-    white-space: nowrap;
+ text-decoration: underline;
 
 }
 
-
-
-/*Footer*/
-
-
-
-footer {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    justify-content: center;
-    align-items: start;
-    gap: clamp(1.25rem, 3vw, 3rem);
-}
-
-
-
-/*Make the footer collpse in mobile by usign drop down for each content*/
-
-
-
-
-
-/*Logo*/
-
-
-
-.logo{
-
-    width: clamp(180px, 11.22685185vw, 400px);
-
-    height: clamp(35px, 2.372685185vw, 50px);
-
-    background-image: url("/assets/img/z_copy_2_1.png");
-
-    background-position: center;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.logo-m{
-
-    width: 2.604166667vw;
-
-    height: 1.157407407vw;
-
-    background-image: url("/assets/img/z_copy_2_1_smaller.png");
-
-    background-position: center;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.logo-sm{
-
-    width: 2.141203704vw;
-
-    height: 0.9837962963vw;
-
-    background-image: url("/assets/img/z_copy_2_1_smaller.png");
-
-    background-position: center;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.logo-tiny{
-
-    width: 1.388888889vw;
-
-    height: 0.6365740741vw;
-
-    background-image: url("/assets/img/z_copy_2_1_smaller.png");
-
-    background-position: center;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.bitcoin{
-
-    background-image: url("/assets/img/Bitcoin.png");
-
-    background-position: center;
-
-    background-size: cover;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.dollar{
-
-    background-image: url("/assets/img/USD-NGN.png");
-
-    background-position: center;
-
-    background-size: cover;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.euro{
-
-    background-image: url("/assets/img/EUR-NGN.png");
-
-    background-position: center;
-
-    background-size: cover;
-
-    background-repeat: no-repeat;
-
-}
-
-
-
-.wave-animation{
-
-    width: 100%;
-
-    height: 30vw;
-
-    display: flex;
-
-    flex-direction: row;
-
-    justify-content: center;
-
-    align-items: center;
-
-    position: absolute;
-
-    top: 0;
-
-    z-index: 1;
-
-    backdrop-filter: blur();
-
-
-
-}
-
-
-
-
-
-.circle-bg{
-
-   background-image: radial-gradient(#0BBCFF 60%, #00FFE5 70% );
-
-   background-position: center;
-
-   background-repeat: no-repeat;
-
-   background-size: cover;
-
-
-
-
-
-}
-
-
-
-#sm-circle{
-
-    width: 13.88888889vw; /*use vw*/
-
-    height: 13.88888889vw;
-
-    border-radius: 50%;
-
-
-
-}
 
 /*TEXT COLORS*/
 
@@ -551,7 +449,7 @@ footer {
 
 .white-text{
 
-    color: var(--download_font_color);
+ color: var(--download_font_color);
 
 }
 
@@ -559,7 +457,7 @@ footer {
 
 .blue-text{
 
-    color: var(--blue);
+ color: var(--blue);
 
 }
 
@@ -567,7 +465,7 @@ footer {
 
 .black-with-wave{
 
-    color: var(--black_with_wave_design);
+ color: var(--black_with_wave_design);
 
 }
 
@@ -575,7 +473,7 @@ footer {
 
 .black-text{
 
-    color: var(--black);
+ color: var(--black);
 
 }
 
@@ -583,7 +481,7 @@ footer {
 
 .currency-text{
 
-    color: var(--currency_black);
+ color: var(--currency_black);
 
 }
 
@@ -591,7 +489,7 @@ footer {
 
 .hero-gray-text{
 
-    color: var(--hero_gray);
+ color: var(--hero_gray);
 
 }
 
@@ -599,7 +497,7 @@ footer {
 
 .lighter-hero-gray-text{
 
-    color: var(--lighter_hero_gray);
+ color: var(--lighter_hero_gray);
 
 }
 
@@ -607,7 +505,7 @@ footer {
 
 .gray{
 
-    color: var(--gray);
+ color: var(--gray);
 
 }
 
@@ -615,7 +513,7 @@ footer {
 
 .download-btn-text{
 
-    color: var(--download_font_color)
+ color: var(--download_font_color)
 
 }
 
@@ -623,7 +521,7 @@ footer {
 
 .how_it_works_font_color{
 
-    color: var(--how_it_works_font_color);
+ color: var(--how_it_works_font_color);
 
 }
 
@@ -631,7 +529,7 @@ footer {
 
 .ft_logo_black{
 
-    color: var(--ft_logo_black);
+ color: var(--ft_logo_black);
 
 }
 
@@ -639,7 +537,7 @@ footer {
 
 .ft_hd_black{
 
-    color: var(--ft_hd_black);
+ color: var(--ft_hd_black);
 
 }
 
@@ -649,9 +547,10 @@ footer {
 
 
 
+
 .blue-bg{
 
-    background-color: var(--blue);
+ background-color: var(--blue);
 
 }
 
@@ -659,7 +558,7 @@ footer {
 
 .white-bg{
 
-    background-color:var(--download_font_color) ;
+ background-color:var(--download_font_color) ;
 
 }
 
@@ -667,33 +566,42 @@ footer {
 
 .black-bg{
 
-    background-color: var(--black);
+ background-color: var(--black);
 
 }
 
+.box-shadow{
+    box-shadow: var(--box-shadow);
+}
 
 
-.how_it_works_btn_border_color{
+.how_it_works_btn_outline{
 
-    border-color: var(--how_it_works_btn_border_color);
+ outline: var(--outline);
+ outline-offset: var(--inside-outline);
 
+}
+
+.section-4-box-outline{
+    outline: var(--outline-sm);
+    outline-offset: var(--inside-outline);    
 }
 
 
 
 .wave_design_1{
 
-    background-image: var(--wave_design_1);
+ background-image: var(--wave_design_1);
 
-    background-repeat: no-repeat;
+ background-repeat: no-repeat;
 
-    background-position: center;
+ background-position: center;
 
-    background-size: cover;
+ background-size: cover;
 
-    background-clip: text;
+ background-clip: text;
 
-    color: transparent
+ color: transparent
 
 
 
@@ -703,17 +611,17 @@ footer {
 
 .wave_design_2{
 
-    background-image: var(--wave_design_2);
+ background-image: var(--wave_design_2);
 
-    background-repeat: no-repeat;
+ background-repeat: no-repeat;
 
-    background-position: left;
+ background-position: left;
 
-    background-size: cover;
+ background-size: cover;
 
-    background-clip: text;
+ background-clip: text;
 
-    color: transparent
+ color: transparent
 
 }
 
@@ -721,17 +629,17 @@ footer {
 
 .wave_design_3{
 
-    background-image: var(--wave_design_3);
+ background-image: var(--wave_design_3);
 
-    background-repeat: no-repeat;
+ background-repeat: no-repeat;
 
-    background-position: center;
+ background-position: center;
 
-    background-size: cover;
+ background-size: cover;
 
-    background-clip: text;
+ background-clip: text;
 
-    color: transparent
+ color: transparent
 
 }
 
@@ -767,10 +675,14 @@ footer {
 
 .diamond-color{
 
-    fill: var(--light_blue_diamond_inner_fill);
+ fill: var(--light_blue_diamond_inner_fill);
 
-    stroke: var(--light_blue_diamond_inner_fill);
 
+}
+
+.diamond-color-stroke{
+
+ stroke: var(--light_blue_diamond_inner_fill);
 }
 
 
@@ -789,15 +701,15 @@ footer {
 
 .blue-graph-main{
 
-    fill: var(--blue_graph_stroke);
+ fill: var(--blue_graph_stroke);
 
-    stroke: #1678F8;
+ stroke: #1678F8;
 
 }
 
 .blue-graph-stroke{
 
-   stroke: var(--blue_graph_stroke);
+stroke: var(--blue_graph_stroke);
 
 }
 
@@ -805,9 +717,9 @@ footer {
 
 .green-graph-main{
 
-    fill: var(--green_graph_stroke);
+ fill: var(--green_graph_stroke);
 
-    stroke: var(--green_graph_stroke);
+ stroke: var(--green_graph_stroke);
 
 }
 
@@ -815,7 +727,7 @@ footer {
 
 .green-graph-stroke{
 
-    stroke: var(--green_graph_stroke);
+ stroke: var(--green_graph_stroke);
 
 }
 
@@ -823,9 +735,9 @@ footer {
 
 .purple-graph-main{
 
-    fill: var(--purple_graph_stroke);
+ fill: var(--purple_graph_stroke);
 
-    stroke: #F4F4F4;
+ stroke: #F4F4F4;
 
 }
 
@@ -833,7 +745,7 @@ footer {
 
 .purple-graph-stroke{
 
-    stroke: var(--purple_graph_stroke);
+ stroke: var(--purple_graph_stroke);
 
 }
 
@@ -845,7 +757,7 @@ footer {
 
 .paper-plane-box-bg{
 
-    background-color: var(--blue_icon_box);
+ background-color: var(--blue_icon_box);
 
 }
 
@@ -853,7 +765,7 @@ footer {
 
 .green-drop-box-bg{
 
-    background-color: var(--green_icon_box);
+ background-color: var(--green_icon_box);
 
 }
 
@@ -861,7 +773,7 @@ footer {
 
 .light-blue-card-box-bg{
 
-    background-color: var(--light_blue_icon_box);
+ background-color: var(--light_blue_icon_box);
 
 }
 
@@ -871,7 +783,7 @@ footer {
 
 .light-blue-text-contr{
 
-    background-color: var(--light_blue_text_contr);
+ background-color: var(--light_blue_text_contr);
 
 }
 
@@ -879,7 +791,7 @@ footer {
 
 .light-green-text-contr{
 
-    background-color: var(--green_icon_box);
+ background-color: var(--green_icon_box);
 
 }
 
@@ -887,7 +799,7 @@ footer {
 
 .light-red-text-contr{
 
-    background-color: var(--red_percentage_contr);
+ background-color: var(--red_percentage_contr);
 
 }
 
@@ -895,7 +807,7 @@ footer {
 
 .light-sky-blue-text-contr{
 
-    background-color: var(--blue_text_contr);
+ background-color: var(--blue_text_contr);
 
 }
 
@@ -903,7 +815,7 @@ footer {
 
 .light-blue-text-contr-text{
 
-    color: var(--light_blue_text_contr_text);
+ color: var(--light_blue_text_contr_text);
 
 }
 
@@ -911,7 +823,7 @@ footer {
 
 .light-green-text-contr-text{
 
-    color: var(--green_text_contr_text)
+ color: var(--green_text_contr_text)
 
 }
 
@@ -919,7 +831,7 @@ footer {
 
 .light-sky-blue-text-contr-text{
 
-    color: var(--blue_text_contr_text)
+ color: var(--blue_text_contr_text)
 
 }
 
@@ -929,7 +841,7 @@ footer {
 
 .coins-box-bg{
 
-    background-color: var(--blue_icon_box);
+ background-color: var(--blue_icon_box);
 
 }
 
@@ -937,7 +849,7 @@ footer {
 
 .diamond-box-bg{
 
-    background-color: var(--blue_text_contr);
+ background-color: var(--blue_text_contr);
 
 }
 
@@ -945,7 +857,7 @@ footer {
 
 .green-credit-card-box-bg{
 
-    background-color: var(--green_icon_box);
+ background-color: var(--green_icon_box);
 
 }
 
@@ -953,7 +865,7 @@ footer {
 
 .shield-box-bg{
 
-    background-color: var(--purple_icon_box);
+ background-color: var(--purple_icon_box);
 
 }
 
@@ -961,7 +873,7 @@ footer {
 
 .green-arrow-color{
 
-    stroke: var(--green_graph_stroke);
+ stroke: var(--green_graph_stroke);
 
 }
 
@@ -969,13 +881,13 @@ footer {
 
 .red-arrow-color{
 
-    stroke: var(--red_arrow_inner_fill);
+ stroke: var(--red_arrow_inner_fill);
 
 }
 
 .blue-arrow-color{
 
-    stroke: var(--light_blue_text_contr_text);
+ stroke: var(--light_blue_text_contr_text);
 
 }
 
@@ -985,7 +897,7 @@ footer {
 
 .green-text-color{
 
-    color: var(--green_text_contr_text);
+ color: var(--green_text_contr_text);
 
 }
 
@@ -993,7 +905,7 @@ footer {
 
 .green-text-percentage-color{
 
-    color: var(--green_arrow_inner_fill);
+ color: var(--green_arrow_inner_fill);
 
 }
 
@@ -1001,7 +913,7 @@ footer {
 
 .red-text-percentage-color{
 
-    color: var(--red_arrow_inner_fill);
+ color: var(--red_arrow_inner_fill);
 
 }
 
@@ -1013,9 +925,9 @@ footer {
 
 .blue-star-box-size{
 
-    width: 1.215277778vw;
+ width: clamp(1rem, 1.215277778vw, 3rem) ;
 
-    height: 1.215277778vw;
+ height:clamp(1rem, 1.215277778vw, 3rem);
 
 }
 
@@ -1023,17 +935,17 @@ footer {
 
 .download-btn-arrow-box{
 
-    width: 1.50462963vw;
+ width: clamp(1rem, 1.50462963vw, 4rem) ;
 
-    height: 1.50462963vw;
+ height:clamp(1rem, 1.50462963vw, 4rem);
 
 }
 
 .paper-plane-box-size{
 
-    width: 1.62037037vw;
+ width: clamp(1rem, 1.62037037vw, 4rem);
 
-    height: 1.62037037vw;
+ height: clamp(1rem, 1.62037037vw, 4rem);
 
 }
 
@@ -1041,9 +953,9 @@ footer {
 
 .green-drop-size{
 
-    width: 2.083333333vw;
+ width: clamp(1.5rem, 2.083333333vw, 4rem);
 
-    height: 2.083333333vw;
+ height: clamp(1.5rem, 2.083333333vw, 4rem);
 
 }
 
@@ -1051,9 +963,9 @@ footer {
 
 .light-blue-credit-card-size{
 
-    width: 1.62037037vw;
+ width: clamp(1rem, 1.62037037vw, 4rem);
 
-    height: 1.62037037vw;
+ height: clamp(1rem, 1.62037037vw, 4rem);
 
 }
 
@@ -1061,9 +973,9 @@ footer {
 
 .arrow-size{
 
-    width: 1.331018519vw;
+width: clamp(1rem, 1.331018519vw, 3.5rem);
 
-    height: 1.331018519vw;
+ height: clamp(1rem, 1.331018519vw, 3.5rem);
 
 }
 
@@ -1071,9 +983,9 @@ footer {
 
 .coins-size{
 
-    width: 1.388888889vw;
+ width: clamp(1.2rem, 1.388888889vw, 3rem);
 
-    height:1.388888889vw;
+ height: clamp(1.2rem, 1.388888889vw, 3rem);
 
 }
 
@@ -1081,9 +993,9 @@ footer {
 
 .diamond-size{
 
-    width: 1rem;
+ width: clamp(1rem, 0.9259259259vw, 3rem);
 
-    height: 1rem;
+ height: clamp(1rem, 0.9259259259vw, 3rem);
 
 }
 
@@ -1091,9 +1003,9 @@ footer {
 
 .green-credit-card-size{
 
-    width: 0.9259259259vw;
+ width: clamp(0.75rem, 0.9259259259vw, 4rem);
 
-    height: 0.9259259259vw;
+ height: clamp(0.75rem, 0.9259259259vw, 4rem);
 
 }
 
@@ -1101,9 +1013,9 @@ footer {
 
 .purple-shield{
 
-    width: 1.099537037vw;
+ width: clamp(1rem, 1.099537037vw, 3rem);
 
-    height: 1.099537037vw;
+ height: clamp(1rem, 1.099537037vw, 3rem);
 
 }
 
@@ -1111,9 +1023,9 @@ footer {
 
 .apple-size{
 
-    width: 1.851851851852vw;
+ width: clamp(1rem, 1.851851851852vw, 3rem);
 
-    height: 1.851851851852vw;
+ height: clamp(1rem, 1.851851851852vw, 3rem);
 
 }
 
@@ -1121,9 +1033,9 @@ footer {
 
 .andriod-size{
 
-    width: 1.851851851852vw;
+ width: clamp(1rem, 1.851851851852vw, 3rem);
 
-    height: 1.851851851852vw;
+ height: clamp(1rem, 1.851851851852vw, 3rem);
 
 }
 
@@ -1131,9 +1043,9 @@ footer {
 
 .blue-graph-size{
 
-    width: 25.75231481vw;
+ width: clamp(15rem, 25.75231481vw, 35rem);
 
-    height: 8.333333333vw;
+ height: clamp(6rem, 8.333333333vw, 10rem);
 
 }
 
@@ -1141,9 +1053,9 @@ footer {
 
 .green-graph-size{
 
-    width: 25.86805556vw;
+ width: clamp(15rem, 25.86805556vw, 35rem);
 
-    height: 8.506944444vw;
+ height: clamp(5.95rem, 8.506944444vw, 9.5rem);
 
 }
 
@@ -1151,9 +1063,9 @@ footer {
 
 .purple-graph-size{
 
-    width: 25.5787037vw;
+ width: clamp(15rem, 25.5787037vw, 35rem);
 
-    height: 8.101851852vw;
+ height: clamp(6rem, 8.101851852vw, 9.5rem);
 
 }
 
@@ -1163,11 +1075,11 @@ footer {
 
 .section-2-iconbox{
 
-    width: 3.761574074vw;
+ min-width: clamp(2.5rem, 3.761574074vw, 5rem);
 
-    height: 3.761574074vw;
+ min-height: clamp(2.5rem, 3.761574074vw, 5rem);
 
-    border-radius: 1.041666667vw;
+ border-radius: 1.041666667vw;
 
 }
 
@@ -1175,11 +1087,11 @@ footer {
 
 .section-4-iconbox{
 
-    width: 2.893518519vw;
+ min-width: clamp(1.95rem, 2.893518519vw, 3.5rem);
 
-    height: 2.893518519vw;
+ min-height: clamp(1.95rem, 2.893518519vw, 3.5rem);
 
-    border-radius: 0.9259259259vw;
+ border-radius: 0.9259259259vw;
 
 }
 
@@ -1193,9 +1105,9 @@ footer {
 
 .currency-img-size{
 
-    width: 2.488425926vw;
+ width: 2.488425926vw;
 
-    height: 2.488425926vw;
+ height: 2.488425926vw;
 
 }
 
@@ -1203,15 +1115,17 @@ footer {
 
 .country-transfer{
 
-    height: 34.31712963vw;
+ height: 34.31712963vw;
 
-    background-image: url("/assets/img/Across_Africa.png");
+ background-image: url("/assets/img/Across_Africa.png");
 
-    background-position: center;
+ background-position: center;
 
-    background-repeat: no-repeat;
+ background-repeat: no-repeat;
 
-    background-size: cover;
+ background-size: cover;
+ 
+ width: 50%;
 
 }
 
@@ -1219,220 +1133,66 @@ footer {
 
 .phone-illustrated{
 
-    width: 40.68287037vw;
+ width: clamp(20rem, 40.68287037vw, 50rem) ;
 
-    height: 57.52314815vw;
+ height: clamp(35rem, 57.52314815vw, 60rem);
 
 }
 
-/* Responsive refinements for the supplied index.html markup. */
-html {
-    scroll-padding-top: clamp(3.5rem, 5vw, 5rem);
+.hero-download-btn, .hero-working-btn{
+    white-space: nowrap;
 }
 
-body {
-    min-width: 0;
-    overflow-x: clip;
+.hero-download-btn:visited{
+    background-color: var(--blue);
+    box-shadow: none;
 }
 
-img,
-svg,
-video,
-canvas {
-    max-width: 100%;
+
+.hero-download-btn:hover, .hero-download-btn:active {
+    background-color: var(--blue_active);
+    box-shadow: var(--box-shadow-active);
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: clamp(0.75rem, 2.5vw, 2.5rem);
+ .hero-working-btn:visited{
+    color: var(--how_it_works_font_color);
+    outline: var(--outline);
+ }
+
+.hero-working-btn:hover, .hero-working-btn:active{
+    color: var(--blue);
+    outline: var(--outline-active);
 }
 
-.logo_box {
-    flex: 0 1 auto;
-    min-width: 0;
+.section-2-box-contr:hover{
+    box-shadow: var(--major_shadow-active);
 }
 
-.nav {
-    min-width: 0;
+.section-3-box-contr:hover{
+    box-shadow: var(--box-shadow-active);
+} 
+
+.section-4-box-contr:hover{
+    box-shadow: var(--box-shadow-active);
 }
 
-.nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(0.75rem, 2.6vw, 3.4rem);
-    white-space: normal;
+.apple:visited{
+    background-color: var(--blue);
+    box-shadow: none;    
 }
 
-.nav_download_btn_box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-width: 0;
+.apple:hover, .apple:active {
+    background-color: var(--apple-btn-active);
+    box-shadow: var(--box-shadow-active);   
 }
 
-.get-the-app {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
+.andriod:visited{
+    background-color: var(--black);
+    box-shadow: none;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    align-items: start;
-    gap: clamp(1.25rem, 3vw, 3rem);
-    padding-block: clamp(2rem, 4vw, 4rem);
+.andriod:hover, .andriod:active{
+    background-color: var(--black);
+    box-shadow: var(--box-shadow-active);   
 }
 
-/* The second direct footer child contains PRODUCT, COMPANY and LEGAL groups. */
-footer > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start;
-    gap: clamp(1rem, 2.5vw, 2.5rem);
-    min-width: 0;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(0.5rem, 0.8vw, 0.875rem);
-    margin-top: clamp(0.5rem, 1vw, 1rem);
-}
-
-footer .vertical-alignment {
-    gap: clamp(0.625rem, 1vw, 1rem);
-    min-width: 0;
-}
-
-/* Logo/image/icon dimensions have sensible lower and upper bounds. */
-.logo {
-    width: clamp(8.5rem, 11.2269vw, 12.5rem);
-    height: clamp(1.75rem, 2.3727vw, 3.125rem);
-}
-.logo-m { width: clamp(1.25rem, 2.6042vw, 2.8125rem); height: clamp(0.75rem, 1.1574vw, 1.25rem); }
-.logo-sm { width: clamp(1.125rem, 2.1412vw, 2.3125rem); height: clamp(0.65rem, 0.9838vw, 1.0625rem); }
-.logo-tiny { width: clamp(0.875rem, 1.3889vw, 1.5rem); height: clamp(0.5rem, 0.6366vw, 0.6875rem); }
-.wave-animation { height: clamp(12rem, 30vw, 32.4rem); }
-#sm-circle { width: clamp(8rem, 13.8889vw, 15rem); height: clamp(8rem, 13.8889vw, 15rem); }
-.blue-star-box-size { width: clamp(0.5rem, 1.2153vw, 1.3125rem); height: clamp(0.5rem, 1.2153vw, 1.3125rem); }
-.download-btn-arrow-box { width: clamp(0.625rem, 1.5046vw, 1.625rem); height: clamp(0.625rem, 1.5046vw, 1.625rem); }
-.paper-plane-box-size { width: clamp(0.75rem, 1.6204vw, 1.75rem); height: clamp(0.75rem, 1.6204vw, 1.75rem); }
-.green-drop-size { width: clamp(0.875rem, 2.0833vw, 2.25rem); height: clamp(0.875rem, 2.0833vw, 2.25rem); }
-.light-blue-credit-card-size { width: clamp(0.75rem, 1.6204vw, 1.75rem); height: clamp(0.75rem, 1.6204vw, 1.75rem); }
-.arrow-size { width: clamp(0.625rem, 1.331vw, 1.4375rem); height: clamp(0.625rem, 1.331vw, 1.4375rem); }
-.coins-size { width: clamp(0.625rem, 1.3889vw, 1.5rem); height: clamp(0.625rem, 1.3889vw, 1.5rem); }
-.diamond-size { width: clamp(0.625rem, 1rem, 1rem); height: clamp(0.625rem, 1rem, 1rem); }
-.green-credit-card-size { width: clamp(0.5rem, 0.9259vw, 1rem); height: clamp(0.5rem, 0.9259vw, 1rem); }
-.purple-shield { width: clamp(0.5rem, 1.0995vw, 1.1875rem); height: clamp(0.5rem, 1.0995vw, 1.1875rem); }
-.apple-size, .andriod-size { width: clamp(1rem, 1.8519vw, 2rem); height: clamp(1rem, 1.8519vw, 2rem); }
-.blue-graph-size { width: clamp(14rem, 25.7523vw, 27.8125rem); height: auto; }
-.green-graph-size { width: clamp(14rem, 25.8681vw, 28rem); height: auto; }
-.purple-graph-size { width: clamp(14rem, 25.5787vw, 27.6875rem); height: auto; }
-.section-2-iconbox { width: clamp(2rem, 3.7616vw, 4.0625rem); height: clamp(2rem, 3.7616vw, 4.0625rem); border-radius: clamp(0.625rem, 1.0417vw, 1.125rem); }
-.section-4-iconbox { width: clamp(1.75rem, 2.8935vw, 3.125rem); height: clamp(1.75rem, 2.8935vw, 3.125rem); border-radius: clamp(0.625rem, 0.9259vw, 1rem); }
-.currency-img-size { width: clamp(1.25rem, 2.4884vw, 2.6875rem); height: clamp(1.25rem, 2.4884vw, 2.6875rem); }
-.country-transfer { height: clamp(18rem, 34.3171vw, 37.125rem); }
-
-/* The HTML uses .phone-illustration and #imported-phone-illustration.
-   Keep the older .phone-illustrated alias for compatibility. */
-.phone-illustration,
-.phone-illustrated {
-    display: flex;
-    flex: 0 1 50%;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    min-width: 0;
-}
-
-#imported-phone-illustration,
-.phone-illustrated {
-    width: clamp(17rem, 40.6829vw, 44rem);
-    max-width: 100%;
-    aspect-ratio: 0.707;
-}
-
-#imported-phone-illustration > img,
-#imported-phone-illustration > svg,
-#imported-phone-illustration > canvas {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-@media (max-width: 64rem) {
-    nav {
-        column-gap: clamp(0.75rem, 2.5vw, 1.5rem);
-        row-gap: clamp(0.75rem, 2vw, 1.25rem);
-    }
-
-    .nav {
-        flex: 1 1 100%;
-        order: 3;
-    }
-
-    .nav ul {
-        justify-content: center;
-        row-gap: clamp(0.5rem, 1.5vw, 1rem);
-    }
-
-    footer {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    }
-
-    .phone-illustration {
-        flex-basis: 45%;
-        width: 45%;
-    }
-
-    #imported-phone-illustration,
-    .phone-illustrated {
-        width: min(100%, 34rem);
-    }
-}
-
-@media (max-width: 48rem) {
-    nav {
-        align-items: center;
-        column-gap: clamp(0.5rem, 2vw, 0.75rem);
-    }
-
-    .logo {
-        width: clamp(8.5rem, 42vw, 11.25rem);
-        height: clamp(1.75rem, 8vw, 2.1875rem);
-    }
-
-    .nav ul {
-        gap: clamp(0.5rem, 2vw, 1rem);
-    }
-
-    footer {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    footer > div:nth-child(2) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 40rem) {
-    .nav ul {
-        justify-content: flex-start;
-    }
-
-    footer > div:nth-child(2) {
-        grid-template-columns: minmax(0, 1fr);
-        gap: clamp(1.25rem, 4vw, 2rem);
-    }
-}
