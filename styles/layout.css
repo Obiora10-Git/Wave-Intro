@@ -10,6 +10,12 @@
     --radius-button: clamp(1rem, calc(1.2rem + 0.7407vw), 2.5rem);
     --radius-card: clamp(0.25rem, calc(1.5rem + 0.9259vw), 3.125rem);
     --radius-small: clamp(0.625rem, calc(0.8625rem + 0.5324vw), 1.875rem);
+    
+ --wave_design_1: linear-gradient(90deg, #0080FF 0%, #00FFE5 64%);
+
+ --wave_design_2: linear-gradient(90deg, #0080FF 30%, #00FFE5 65%);
+
+ --wave_design_3: linear-gradient(90deg, #0080FF 48%, #00FFE5 63%);
 }
 
 /* Shared page spacing */
@@ -659,8 +665,12 @@ color: #fff;
 }
 
 .sidebar li:hover{
-    background-color: #0066FF;
-    color: #fff
+    background-image: var(--wave_design_1) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
 }
 
 .get-the-app-btn-bdr-r{
@@ -699,6 +709,7 @@ white-space: nowrap;
 .nav-2 li{
     width: 100%;
 }
+
 
 .sidebar .nav_download_btn_box_2{
      display: flex;
