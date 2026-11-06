@@ -12,6 +12,10 @@
     box-sizing: border-box; 
 }
 
+button, a{
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 :root{
 
@@ -1291,7 +1295,7 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
 
  height: 34.31712963vw;
 
- background-image: url("/assets/img/Across_Africa.png");
+ background-image: url("/assets/img/across-africa-2.jpeg");
 
  background-position: center;
 
