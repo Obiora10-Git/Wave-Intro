@@ -156,6 +156,8 @@ button, a{
  --outline-active: 2px solid #0066FF;
 
  --box-shadow-active: 0 8px 30px 0 #0066f64a;
+ --box-shadow-active-green: 0 8px 30px 0 #37bf8e4a;
+ --box-shadow-active-purple: 0 8px 30px 0 #8a38f54a;
 
  --major_shadow-active: inset 0 -9px 4px 0 #0066FF, 0 8px 30px 0 #0066f64a;
 
@@ -190,6 +192,7 @@ nav {
     align-items: center;
     gap: clamp(0.75rem, 6vw,8rem);
     min-height: clamp(3rem, 2.9vw, 3.125rem);
+    
 }
 
 .hamburger-contr{
@@ -223,6 +226,10 @@ footer button{
     flex: 1;
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 
@@ -233,12 +240,20 @@ header{
  position: fixed;
  top: 0;
  left: 0;
- background-color: var(--bg_white);
  border-bottom: 1px solid #3333330a;
  z-index: 200;
 
 }
 
+.absolute-header {
+  background-color: transparent;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Class to apply when inside a specific section */
+.absolute-header.alt-color {
+  background-color: #FFFFFF;
+}
 
 
 section{
@@ -562,29 +577,30 @@ width: clamp(2rem, 5vw, 5rem);
 
 
 .wave-animation{
+display: grid;
+grid-template-columns: 1fr;
 
+position: relative;
  width: 100%;
 
- height: 30vw;
-
- display: flex;
-
- flex-direction: row;
-
- justify-content: center;
-
- align-items: center;
-
- position: absolute;
-
- top: 0;
+ height: 64.8148148148vw;
 
  z-index: 1;
 
- backdrop-filter: blur();
+ overflow: hidden;
+
+  
 
 
 
+}
+
+.glass{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(17px);
+    z-index: 50;
 }
 
 
@@ -601,6 +617,8 @@ background-repeat: no-repeat;
 
 background-size: cover;
 
+z-index: 1;
+
 
 
 
@@ -611,15 +629,129 @@ background-size: cover;
 
 #sm-circle{
 
- width: 13.88888889vw; /*use vw*/
+ width: 22vw; /*use vw*/
 
- height: 13.88888889vw;
+ height: 22vw;
 
  border-radius: 50%;
+ 
+position: absolute;
+top: 45%;
+left: 30%;
+
+
+/*top: 14.5%;
+left: 3%;*/
+
+/*top: 29.5%;
+left: 14.8%;*/
 
 
 
 }
+#mid-circle{
+
+ width: 24vw; /*use vw*/
+
+ height: 24vw;
+
+ border-radius: 50%;
+
+ position: absolute;
+ top: 68%;
+right: 81%;
+
+
+
+}
+#big-circle{
+
+ width: 32vw; /*use vw*/
+
+ height: 32vw;
+
+ border-radius: 50%;
+
+ position: absolute;
+ bottom: 59%;
+left: 74%;
+
+}
+
+.circle-animate{
+    animation-name: wave-animated;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.circle-animate-2{
+    animation-name: wave-animated-2;
+    animation-duration: 11s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.circle-animate-3{
+    animation-name: wave-animated-3;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes wave-animated{
+    0%{
+       transform: translateX(0) translateY(0);
+ 
+    }
+    33%{
+        transform: translateX(-26.0417vw) translateY(-19.0972vw);
+    }
+    66%{
+        transform: translateX(-12.7315vw) translateY(-5.2083vw);
+    }
+    100%{
+       transform: translateX(0) translateY(0);
+    }
+}
+@keyframes wave-animated-2{
+    0%{
+       transform: translateX(0) translateY(0);
+ 
+    }
+
+    33%{
+        transform: translateX(26.0417vw) translateY(-6.9444vw);
+    }
+
+    66%{
+        transform: translateX(26.0417vw) translateY(-6.9444vw);
+    }
+
+    100%{
+       transform: translateX(0) translateY(0);
+    }
+}
+@keyframes wave-animated-3{
+    0%{
+       transform: translateX(0) translateY(0);
+ 
+    }
+
+    33%{
+        transform: translateX(-43.4028vw) translateY(26.0417vw);
+    }
+    66%{
+        transform: translateX(-43.4028vw) translateY(26.0417vw);
+    }
+
+    100%{
+       transform: translateX(0) translateY(0);
+    }
+}
+
+
 
 /*TEXT COLORS*/
 
@@ -1346,8 +1478,14 @@ width: clamp(1rem, 1.331018519vw, 3.5rem);
     box-shadow: var(--major_shadow-active);
 }
 
-.section-3-box-contr:hover{
+.graph-box-1:hover{
     box-shadow: var(--box-shadow-active);
+} 
+.graph-box-2:hover{
+    box-shadow: var(--box-shadow-active-green);
+} 
+.graph-box-3:hover{
+    box-shadow: var(--box-shadow-active-purple);
 } 
 
 .section-4-box-contr:hover{

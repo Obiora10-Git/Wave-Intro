@@ -44,3 +44,16 @@ const sidebar = document.querySelector('.sidebar');
 logoBtn.addEventListener('click', function() {
   sidebar.classList.toggle('hb-active');
 });
+
+
+const absoluteHeader = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  // If the user has scrolled down more than 10 pixels from the very top of the page
+  if (window.scrollY > 10) {
+    absoluteHeader.classList.add('alt-color');
+  } else {
+    // Only removes it when they are back at the absolute top (scrollY <= 10)
+    absoluteHeader.classList.remove('alt-color');
+  }
+});

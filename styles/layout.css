@@ -523,6 +523,11 @@ gap: clamp(0.2rem, 0.5vw, 1.5rem)
 
 @media screen and (orientation: portrait) and (max-width: 730px){
 
+    .wave-animation{
+        display: none;
+    }
+  
+
     .footer-font { font-size: clamp(0.8125rem, calc(0.625vw + 0.65rem), 1.5rem); }
 
     .footer-sm-heading { font-size: clamp(0.875rem, calc(0.8333vw + 0.75rem), 2rem); }

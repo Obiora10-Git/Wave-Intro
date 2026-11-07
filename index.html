@@ -8,13 +8,14 @@
     <title>Wave</title>
 </head>
 <body>
-    <div class="wave-animation" style="display: none;">
+    <div class="wave-animation" >
+        <div class="glass"></div>
         
-        <div id="sm-circle" class="circle-bg"></div>
-        <div id="mid-circle" class="circle-bg"></div>
-        <div id="big-circle" class="circle-bg"></div>
+        <div id="sm-circle" class="circle-bg circle-animate"></div>
+        <div id="mid-circle" class="circle-bg circle-animate-2"></div>
+        <div id="big-circle" class="circle-bg circle-animate-3"></div>
     </div>
-    <div class="sidebar">
+    <div class="sidebar" style="display: none;">
         <div class="nav-2">
                     <ul>
                         <li class="nav-content"><a class="a-text semi-bold" href="#section-2">Features</a></li>
@@ -28,7 +29,7 @@
                 </div>
     </div>
     <div class="body_content" >
-        <header class="main-pd-all-sm">
+        <header class="absolute-header main-pd-all-sm">
             <nav>
                 <div class="logo_box">
                     <div class="logo"></div>
@@ -90,7 +91,7 @@
                     </span>
                 </div>
             </section>
-            <section id="section-2" class="main-pd" >
+            <section id="section-2" class="main-pd" data-change-color="true">
                     <div class="section-2-title">
                         <h2 class="heading-3 bold">Everything you need,<br> nothing you don't</h2>
                         <p class="section-2-intro-pg gray medium">Three products, one flow. No jargon, no confusion - just tap,<br> confirm, done.</p>
@@ -162,7 +163,7 @@
                         </div>
                     </div>
             </section>
-            <section id="section-3" >
+            <section id="section-3" data-change-color="true">
                     <div class="section-3-title-box">
                         <div class="double-item-centering">
                             <span class="vertical-alignment">
@@ -174,7 +175,7 @@
                         <p class="section-3-intro-pg gray medium">No candlesticks, no jargon. Clean waves show you the trend at a glance.</p>
                     </div>
                     <div class="section-3-content main-pd-sm">
-                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                        <div class=" graph-box-1 section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
                             <div class="vertical-alignment section-3-box-gap">
                                 <div class="double-item-centering">
                                     <span class="vertical-alignment">
@@ -232,7 +233,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                        <div class=" graph-box-2 section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
                             <div class="vertical-alignment section-3-box-gap">
                                 <div class="double-item-centering">
                                     <span class="vertical-alignment">
@@ -290,7 +291,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class=" section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
+                        <div class=" graph-box-3 section-3-box-contr section-3-box-contr-size section-3-box-contr-bdr-r vertical-alignment box-pd box-shadow">
                             <div class="vertical-alignment section-3-box-gap">
                                 <div class="double-item-centering">
                                     <span class="vertical-alignment">
@@ -352,7 +353,7 @@
                         </div>
                     </div>
             </section>
-            <section id="section-4">
+            <section id="section-4" data-change-color="true">
                 <div class="country-transfer"></div>
                 <div class="section-4-content ">
                     <p class="section-4-sm-heading blue-text semi-bold" >BUILT FOR AFRICA</p>
@@ -415,7 +416,7 @@
                     </div>
                 </div>
             </section>
-            <section id="section-5" class="main-pd">
+            <section id="section-5" class="main-pd" data-change-color="true">
                 <div class="section-5-title">
                     <h2 class="heading-2 black-with-wave vertical-alignment-center extra-bold">Ready to let your money <span class="double-item-centering-sm-gap"><div class="wave_design_3">flow</div><div>?</div></span></h2>
                     <p class="section-5-pg gray medium">Join 120,000+ people across Nigeria and Benin who send, save, and spend with <br>WAVE every day.</p>
@@ -440,7 +441,7 @@
                 </div>
             </section>
         </main>
-        <footer class="main-pd-all">
+        <footer class="main-pd-all" data-change-color="true">
             <div class="vertical-alignment-with-gap">
                 <div class="double-item-centering">
                     <span class="vertical-alignment">
