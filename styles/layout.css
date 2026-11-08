@@ -64,7 +64,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: clamp(1.5rem, 3vw, 3rem);
-    min-height: clamp(42rem, 64.3519vw, 69.5rem);
+    min-height: clamp(42rem, 64.8148148148vw, 69.5rem);
 }
 
 #section-2 {
@@ -653,7 +653,7 @@ color: #fff;
     left: 0;
     background-color: #fff;
     width: 100%;
-    padding: 2.5rem 0.15rem 0.25rem;
+    padding: 0.4rem 0.15rem 0.25rem;
     border: 1px solid #c3c1c1;
       border-bottom-right-radius: clamp(1rem, calc(1rem + 0.9722vw), 3.25rem);
       border-bottom-left-radius: clamp(1rem, calc(1rem + 0.9722vw), 3.25rem);
@@ -662,7 +662,7 @@ color: #fff;
 }
 
 .sidebar.hb-active{
-    top: 3.25rem;
+    top: 5rem;
     
 }
 
@@ -830,5 +830,11 @@ footer button{
         display: flex;
         flex-direction: row;
         gap: clamp(1rem, 2vw, 5rem);
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 800px){
+    .wave-animation{
+        height: 75vw;
     }
 }
