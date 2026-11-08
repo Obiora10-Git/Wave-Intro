@@ -642,27 +642,28 @@ color: #fff;
 }
 
 .sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(0.20rem, 1.5vw,8rem);
+    display: none;
     height: auto;
     position: fixed;
-    top: -50%;
+    top: 5rem;
     left: 0;
-    background-color: #fff;
+    background-color: transparent;
     width: 100%;
     padding: 0.4rem 0.15rem 0.25rem;
     border: 1px solid #c3c1c1;
       border-bottom-right-radius: clamp(1rem, calc(1rem + 0.9722vw), 3.25rem);
       border-bottom-left-radius: clamp(1rem, calc(1rem + 0.9722vw), 3.25rem);
       z-index: 100;
-    
+    transition: ease 0.25s;
 }
 
 .sidebar.hb-active{
-    top: 5rem;
+    background-color: #fff;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.20rem, 1.5vw,8rem);
     
 }
 
